@@ -1,4 +1,4 @@
-CS_ED
+cs182D
 =====
 
-CS Education
+Computer Science Education
