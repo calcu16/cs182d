@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  5 FEB 2013 18:16
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  6 FEB 2013 09:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -60,35 +60,40 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 7.
 
+[1
+
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (9.50058pt too wide) in paragraph at lines 34--35
+[]\OT1/cmr/m/n/10 This pro-ceed-ings de-scribes sev-eral ways for pro-gram-mers
+ to nav-i-gate through
+ []
+
 (./h02.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 11--14
+Underfull \hbox (badness 7777) in paragraph at lines 15--18
 []\OT1/cmr/m/n/10 III Austin, M.A. and M.H. Samadzadeh, \OT1/cmr/m/it/10 Soft-w
 are com-pre-hen-
  []
 
-[1
-
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
-[2] (./h02.aux) ) 
+[2] [3]) [4] (./h02.aux) ) 
 Here is how much of TeX's memory you used:
- 343 strings out of 493488
- 3821 string characters out of 3141326
- 53432 words of memory out of 3000000
- 3717 multiletter control sequences out of 15000+200000
+ 351 strings out of 493488
+ 3937 string characters out of 3141326
+ 54432 words of memory out of 3000000
+ 3725 multiletter control sequences out of 15000+200000
  7934 words of font info for 28 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 23i,6n,17p,305b,207s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb>
-Output written on h02.pdf (2 pages, 82150 bytes).
+ 23i,6n,17p,335b,207s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti10.pfb>
+Output written on h02.pdf (4 pages, 89353 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

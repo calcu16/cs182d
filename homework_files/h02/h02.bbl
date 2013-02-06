@@ -5,7 +5,11 @@
   \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
 }
 \providecommand{\href}[2]{#2}
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{aschwanden2006}
+C.~Aschwanden and M.~Crosby, \emph{Code scanning patterns in program
+  comprehension},  (2006).
 
 \bibitem{1562886}
 III Austin, M.A. and M.H. Samadzadeh, \emph{Software comprehension/maintenance:
@@ -17,6 +21,17 @@ Ruven Brooks, \emph{Towards a theory of the comprehension of computer
   programs}, International Journal of Man-Machine Studies \textbf{18} (1983),
   no.~6, 543 -- 554.
 
+\bibitem{fitzgerald2008}
+S.~Fitzgerald, G.~Lewandowski, R.~McCauley, L.~Murphy, B.~Simon, L.~Thomas, and
+  C.~Zander, \emph{Debugging: finding, fixing and flailing, a
+  multi-institutional study of novice debuggers}, Computer Science Education
+  \textbf{18} (2008), no.~2, 93--116.
+
+\bibitem{gross2009}
+P.~Gross and C.~Kelleher, \emph{Non-programmers identifying functionality in
+  unfamiliar code: strategies and barriers}, Journal of Visual Languages \&
+  Computing \textbf{21} (2010), no.~5, 263--276.
+
 \bibitem{1000450}
 D.~Hendrix, II~Cross, J.H., and S.~Maghsoodloo, \emph{The effectiveness of
   control structure diagrams in source code comprehension activities}, Software
@@ -27,6 +42,11 @@ Richard~J. Miara, Joyce~A. Musselman, Juan~A. Navarro, and Ben Shneiderman,
   \emph{Program indentation and comprehensibility}, Commun. ACM \textbf{26}
   (1983), no.~11, 861--867.
 
+\bibitem{mosemann2001}
+R.~Mosemann and S.~Wiedenbeck, \emph{Navigation and comprehension of programs
+  by novice programmers}, Program Comprehension, 2001. IWPC 2001. Proceedings.
+  9th International Workshop on, 2001, pp.~79 --88.
+
 \bibitem{DBLP:journals/corr/abs-cs-0503068}
 Michael~L. Nelson, \emph{A survey of reverse engineering and program
   comprehension}, CoRR \textbf{abs/cs/0503068} (2005).
@@ -36,6 +56,20 @@ V.~Rajlich and N.~Wilde, \emph{The role of concepts in program comprehension},
   Program Comprehension, 2002. Proceedings. 10th International Workshop on,
   2002, pp.~271 -- 278.
 
+\bibitem{schneiderman1979}
+Ben Schneiderman and Richard Mayer, \emph{Syntactic/semantic interactions in
+  programmer behavior: A model and experimental results}, International Journal
+  of Computer and Information Sciences \textbf{8} (1979), no.~3, 219--237.
+
+\bibitem{soloway1984}
+Elliot Soloway and Kate Ehrlich, \emph{Empirical studies of programming
+  knowledge}, IEEE Transactions on Software Engineering \textbf{10} (1984),
+  no.~5, 595--609.
+
+\bibitem{storey2005}
+M.-A. Storey, \emph{Theories, methods and tools in program comprehension: past,
+  present and future},  (2005), 181 -- 191.
+
 \bibitem{469502}
 A.~von Mayrhauser and A.M. Vans, \emph{Industrial experience with an integrated
   code comprehension model}, Software Engineering Journal \textbf{10} (1995),
@@ -44,5 +78,9 @@ A.~von Mayrhauser and A.M. Vans, \emph{Industrial experience with an integrated
 \bibitem{402076}
 \bysame, \emph{Program comprehension during software maintenance and
   evolution}, Computer \textbf{28} (1995), no.~8, 44 --55.
+
+\bibitem{wiedenbeck1991}
+Susan Wiedenbeck, \emph{The initial stage of program comprehension}, Int. J.
+  Man-Machine Studies \textbf{35} (1991), 517--540.
 
 \end{thebibliography}
