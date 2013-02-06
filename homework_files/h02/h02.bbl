@@ -1,0 +1,48 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{1}
+
+\bibitem{1562886}
+III Austin, M.A. and M.H. Samadzadeh, \emph{Software comprehension/maintenance:
+  an introductory course}, Systems Engineering, 2005. ICSEng 2005. 18th
+  International Conference on, aug. 2005, pp.~414 -- 419.
+
+\bibitem{Brooks1983543}
+Ruven Brooks, \emph{Towards a theory of the comprehension of computer
+  programs}, International Journal of Man-Machine Studies \textbf{18} (1983),
+  no.~6, 543 -- 554.
+
+\bibitem{1000450}
+D.~Hendrix, II~Cross, J.H., and S.~Maghsoodloo, \emph{The effectiveness of
+  control structure diagrams in source code comprehension activities}, Software
+  Engineering, IEEE Transactions on \textbf{28} (2002), no.~5, 463 --477.
+
+\bibitem{Miara:1983:PIC:182.358437}
+Richard~J. Miara, Joyce~A. Musselman, Juan~A. Navarro, and Ben Shneiderman,
+  \emph{Program indentation and comprehensibility}, Commun. ACM \textbf{26}
+  (1983), no.~11, 861--867.
+
+\bibitem{DBLP:journals/corr/abs-cs-0503068}
+Michael~L. Nelson, \emph{A survey of reverse engineering and program
+  comprehension}, CoRR \textbf{abs/cs/0503068} (2005).
+
+\bibitem{1021348}
+V.~Rajlich and N.~Wilde, \emph{The role of concepts in program comprehension},
+  Program Comprehension, 2002. Proceedings. 10th International Workshop on,
+  2002, pp.~271 -- 278.
+
+\bibitem{469502}
+A.~von Mayrhauser and A.M. Vans, \emph{Industrial experience with an integrated
+  code comprehension model}, Software Engineering Journal \textbf{10} (1995),
+  no.~5, 171 --182.
+
+\bibitem{402076}
+\bysame, \emph{Program comprehension during software maintenance and
+  evolution}, Computer \textbf{28} (1995), no.~8, 44 --55.
+
+\end{thebibliography}
