@@ -9,6 +9,8 @@
 Our scheduled interviews:
 \begin{enumerate}
   \item Interview with NW at 9:30pm on Tuesday, February 19
+  \item Interview with NB not yet scheduled
+  \item Interview with DE at 9:00pm on Tuesday, February 26
   \item
 \end{enumerate}
 \section{Description of Topic}
@@ -48,30 +50,53 @@ Our questions are aimed to find a level that challenges the participant so that 
   \item Have participant sign the consent form.
   \item Provide participant a copy of the consent form.
   \item Turn on the video camera.
-  \item Introduce topic: "We're very interested in how people look at unfamiliar code. Thus, for this interview we will be giving you pieces of code that you likely have not seen before and would like to observe you familiarizing yourself with it. To that end, we would like you to talk out loud about what you are looking at as much as possible. Most of the code will be provided on paper and there is a pencil that you can use as you work. We intend to observe your process and do not aim to completely baffle you. If you have questions about unfamiliar syntax or concepts we would be happy to answer them."
+  \item Introduce topic: "We're very interested in how people look at unfamiliar code. Thus, for this interview we will be giving you pieces of code that you likely have not seen before and would like to observe you familiarizing yourself with it. To that end, we would like you to talk out loud about what you are looking at as much as possible. Most of the code will be provided on paper and there is a pencil that you can use as you work. We intend to observe your process and do not aim to completely baffle you. At the same time, we would like to see you familiarizing yourself with code that you might not immediately be able to tell what is going on. So, if you have questions about unfamiliar syntax or concepts we would be happy to answer them."
   \item Have participant work on Question 1.1 \\
   \begin{enumerate}
-    \item Introduce question: "For this question we would like you to familiarize yourself with some Python code."
+    \item Introduce question: "For this question we would like you to familiarize yourself with some Python code. Please explain to us what you think this code does."
     \item Hand participant the attached handout, Question 1.1
     \item Possible follow-up questions:
+    \begin{enumerate}
+      \item Why did you start with this function?
+      \item Why did you move from this function to this other function?
+      \item What does the program end up doing?
+    \end{enumerate}
   \end{enumerate}
   \item If participant was not confident on Question 1.1, have participant work on Question 1.2
    \begin{enumerate}
-    \item Introduce question: "For this question, we would like you to again familiarize yourself with some Python code. "
+    \item Introduce question: "For this question, we would like you to again familiarize yourself with some Python code. Please explain to us what you think this code does. "
     \item Hand participant the attached handout, Question 1.2
     \item Possible follow-up questions:
+     \begin{enumerate}
+      \item Why did you start with this function?
+      \item Why did you move from this function to this other function?
+      \item What does the program end up doing?
+    \end{enumerate}
   \end{enumerate}
   \item If participant was confident enough on Question 1.1 or 1.2, have participant work on Question 2.1
    \begin{enumerate}
     \item Introduce question: "For this question we would like to have you look at some code in the programming language Ruby. This is the scenario: A coworker recently left on vacation and left two files behind. One of those files is a Date class and your boss wasn't sure if the coworker had finished including leap year support. Your boss would like you to make sure it is supported."
     \item Hand participant the attached handout, Question 2.1
     \item Possible follow-up questions:
+     \begin{enumerate}
+      \item Why did you start here?
+      \item Why did you move from this function to this other function?
+      \item How did this feel different than looking at the Python code?
+      \item Ask about functions they should have been able to ignore and see to what extent they analyzed it.
+    \end{enumerate}
   \end{enumerate}
   \item If participant was not confident on Question 2.1, have participant work on Question 2.2
    \begin{enumerate}
-    \item Introduce question:
+    \item Introduce question: "For this question we would like to have you look at some code in Python. This is the scenario: You acquired a connect 4 program from a friend. However, the friend has warned you that you can put too many pieces in a column. Determine a possible fix for this bug so that you can enjoy your connect 4 program."
     \item Hand participant the attached handout, Question 2.2
     \item Possible follow-up questions:
+    \begin{enumerate}
+      \item Why did you start here?
+      \item Why did you move from this function to this other function?
+      \item How did this feel different than looking at the Ruby code?
+      \item How did this feel different than the first (or first and second) question?
+      \item Ask about functions they should have been able to ignore and see to what extent they analyzed it.
+    \end{enumerate}
   \end{enumerate}
   \item If participant was confident enough on Question 2.1 or 2.2, have participant work on Question 3.1
    \begin{enumerate}
@@ -79,6 +104,12 @@ Our questions are aimed to find a level that challenges the participant so that 
     \item Turn on screen capture.
     \item Place computer with code before participant.
     \item Possible follow-up questions:
+     \begin{enumerate}
+      \item Why did you start here?
+      \item Why did you move from this function to this other function?
+      \item Ask about functions they should have been able to ignore and see to what extent they analyzed it.
+      \item Do they understand how the execution of the program works?
+    \end{enumerate}
   \end{enumerate}
   
 \end{enumerate}
@@ -119,7 +150,7 @@ def function50(i, L):
     return L[i+2]
 
 def function37(L):
-    return L[-1]+L
+    return [L[-1]]+L
 
 def function52(i):
     return function4() * i
@@ -131,12 +162,14 @@ def function4():
     return 3
 
 def function188(L):
-    return function37(L)+function50(2, L)
+    return function37(L)+[function50(2, L)]
 
 def function0():
     return function188([1,2,3,4,5,6,7,8,9])[function1(0,1)]
 
-function0()
+x = function0()
+print x
+
 \end{verbatim}
 
 \newpage

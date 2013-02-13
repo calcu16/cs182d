@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 FEB 2013 16:08
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 FEB 2013 22:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -124,12 +124,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 [2] [3] [4] [5] [6] [7] [8] [9]
-Overfull \hbox (11.89423pt too wide) in paragraph at lines 342--342
+Overfull \hbox (11.89423pt too wide) in paragraph at lines 375--375
 []        \OT1/cmtt/m/n/14.4 return all(len(col) >= self.height for col in self
 .board)[] 
  []
@@ -142,14 +142,14 @@ Here is how much of TeX's memory you used:
  4114 multiletter control sequences out of 15000+200000
  7449 words of font info for 27 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 24i,6n,32p,628b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 24i,6n,32p,773b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt12.pfb>
-Output written on h03.pdf (11 pages, 83145 bytes).
+Output written on h03.pdf (11 pages, 84319 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
