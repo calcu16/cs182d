@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[margin=0.5in]{geometry}
+%\usepackage[margin=0.5in]{geometry}
 \usepackage{listings}
 
 \title{Homework 04 - Interviews and Content Logs}
@@ -8,7 +8,7 @@
 \begin{document}
 \maketitle
 \section{Interview: ACBE1}
-\subsection{Post Interview Reflection}
+\subsection{Post Interview Reflection (Joint)}
 \begin{itemize}
   \item Hard to tell when participant is asking questions we should answer.
   \item Did first two questions prime participant too much to completely understand the code instead of trying to fix specific problem?
@@ -30,9 +30,24 @@ Technical difficulties:
 \end{itemize}
 We went through Questions 1.1, 1.2, 2.1, and 2.2. 
 \subsection{Most Interesting Pieces}
+\begin{itemize}
+  \item Time: 10:00 - 12:00 (Video 1) \\
+  Summary: SUBJECT partially calculates result of a function call for func188 in 1.2.
+However SUBJECT forgets to wrap in a list and add the first half, SUBJECT then goes back, points out it returns some of list (which SUBJECT still forgets) then realizes second value is also in a list and moves on. \\
+  Relations to Topic: SUBJECT is trying to work through evaluation of code they haven't seen before and getting confused. \\
+  Possible Arguments: While debugging, it is easy for programmer to introduce new bugs.
+  \item Time: 2:12 - 3:56, 4:41 - 6:15ish (Video 1) \\
+  Summary: SUBJECT points out "f" is bound to func4 in a call of func1, procedes to forget this binding, later asks what's "f", then says "ohhh" but is still very confused.
+Retries later, still has trouble figuring out what "f" was bound to, even though she clearly pointed it out in the very first pass. \\
+  Relations to Topic: SUBJECT is tracing through code and getting confused about portions already figured out. \\
+  Possible Arguments: The act of trying to interpret other peoples code involves keeping many things in mind.
+\end{itemize}
 \subsection{Content Log}
+Content log is provided in separate text file labeled ACBE1.
+
+\newpage
 \section{Interview: ACBE2}
-\subsection{Post Interview Reflection}
+\subsection{Post Interview Reflection (Joint)}
 \begin{itemize}
   \item Went through first two problems very efficiently
   \item In 2.1, figured out problem with tomorrow and how to fix it, and what the problem with yesterday was, but not how to fix yesterday until prompted
@@ -50,15 +65,30 @@ Interview length: 36:25m \\
 Technical difficulties:
 \begin{itemize}
   \item Camera setting were slightly different, but recording came out fine
+  \item One function in Question 2.2 was on two pages, since it was in python, indentation was actually important
 \end{itemize}
 We went through Questions 1.1, 1.2, 2.1, and 2.2.
 \subsection{Most Interesting Pieces}
+\begin{itemize}
+  \item Time: 13:15 - 13:55\\
+  Summary: SUBJECT looks at tomorrow function, recognizes that there is a part of the function that we care about in relation to finding the 'bug'. \\
+  Relations to Topic: SUBJECT has found a piece of information within a file and knows that they care about it, a good step when looking at code you are unfamiliar with but need to bug fix. \\
+  Possible Arguments: A programmer does not need to understand a whole file in order to find important pieces of code.
+  \item Time: 4:37 - 4:55, 19:00 - 19:24\\
+  Summary: In first segment, SUBJECT explains that they started with main() so they could backtrack since they had no context for the other functions. In second segment, SUBJECT explains that with the class based code and the longer code they couldn't just go from function to function, had to understand what everything was doing, was different than the code talked about in the first segment. \\
+  Relations to Topic: Showing different ways that a programmer first looks at unfamiliar code. \\
+  Possible Arguments: The concepts used (Object Oriented v. functional) as well as style of code (long v. small functions) can affect how the programmer perceives how they should go about analyzing the code.
+\end{itemize}
+
 \subsection{Content Log}
+Content log is provided in separate text file labeled ACBE2.
+
+\newpage
 \section{Next Interviews}
 Our scheduled interviews:
 \begin{enumerate}
+  \item Interview with EG at 10:00am on Thursday, February 21
   \item Interview with DE at 9:00pm on Tuesday, February 26
-  \item Interview with EG to be scheduled
 \end{enumerate}
 \end{document}
 
