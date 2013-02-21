@@ -309,7 +309,7 @@ class OurDate
 end
 
 \end{lstlisting}
-%\newpage
+\newpage
 Question 2.2\\
 \line(1,0){300}
 \begin{lstlisting}[language=python]
@@ -320,11 +320,13 @@ class Board(object):
 		self.board = [[] for i in range(width)]
 		self.width = 7
 		self.height= 6
+	
 	def drop(self, player, column):
 		if column < len(self.board):
 			self.board[column].append(player)
 			return True
 		return False
+	
 	def __str__(self):
 		result = ""
 		for r in reversed(range(self.height)):
@@ -338,8 +340,10 @@ class Board(object):
 			result += "\n"
 		result += "-" * (2 * self.width + 1)
 		return result
+	
 	def full(self):
 		return all(len(col) >= self.height for col in self.board)
+	
 	def score(self, player):
 		for c in range(self.height):
 			for r in range(len(self.board[c])):
@@ -355,7 +359,7 @@ class Board(object):
 						if self.board[nc][nr] != p:
 							break
 					else:
-						return 1 if p == player else -1
+						return 1 if p = = player else -1
 		return 0
 
 other = {'X' : 'O', 'O' : 'X'}
