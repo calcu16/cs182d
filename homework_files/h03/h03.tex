@@ -218,28 +218,28 @@ class OurDate
 	end
 
 	def is_equal?( d )
-		puts @year == d.year and 
-			@month == d.month and 
+		puts @year = = d.year and 
+			@month = = d.month and 
 			@day = d.day
 	end
 
 	def is_leap_year?
-		if @year % 400 == 0
-			puts 1
-		elsif @year % 100 == 0
-			puts nil
-		elsif @year % 4 == 0
-			puts 1
+		if @year % 400 = = 0
+			puts true
+		elsif @year % 100 = = 0
+			puts false
+		elsif @year % 4 = = 0
+			puts true
 		else
-			puts nil
+			puts false
 		end
 	end
 
 	def check_month
-		if @month == 13
+		if @month = = 13
 			@month = 1
 			@year = @year + 1
-		elsif @month == 0
+		elsif @month = = 0
 			@month = 12
 			@year = @year - 1
 		end
@@ -249,7 +249,7 @@ class OurDate
 		@day = @day + 1
 		if @day > 31
 			for i in $months31
-				if @month == i
+				if @month = = i
 					@day = 1
 					@month = @month + 1
 					check_month
@@ -257,13 +257,13 @@ class OurDate
 			end
 		elsif @day > 30
 			for i in $months30
-				if @month == i
+				if @month = = i
 					@day = 1
 					@month = @month + 1
 					check_month
 				end
 			end
-		elsif @day > 28 and @month == 2
+		elsif @day > 28 and @month = = 2
 			@day = 1
 			@month = @month + 1
 			check_month
@@ -272,20 +272,20 @@ class OurDate
 
 	def yesterday
 		@day = @day - 1
-		if @day == 0
+		if @day = = 0
 			@month = @month - 1
 			check_month
 			for i in $months31
-				if @month == i
+				if @month = = i
 					@day = 31
 				end
 			end
 			for i in $months30
-				if @month == i
+				if @month = = i
 					@day = 30
 				end
 			end
-			if @month == 2
+			if @month = = 2
 				@day = 28
 			end
 		end
