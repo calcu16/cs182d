@@ -81,12 +81,57 @@ class Board(object):
 While there could have been multiple solutions, we were looking for students to tell us to add an extra check within the drop function checking if the length of the list representing the column was full.
 
 \section{Narration of Data}
+
+The student begins talking as soon as he is handed the question,
+
 ACBE3, Q1.1 \\
+\begin{quote}
+1:55 : Alright umm, so, its got a main, so thats gonna start ummm, its going to print whatever the result of \\
+2:00 : function 3 on 1, 2, 3, 4, some array. So lets see, \\
+2:05 : Function 3 takes a list and returns whatever function  2 does called with list \\
+2:10 : and some argument 4. Function 2 returns function 1 \\
+2:15 : with the same two arguments already passed to it, and \\
+2:20 : function 4 the result of, which doesn't have any \\
+2:25 : implied arguments, thats interesting. Umm, \\
+2:30 : ... \\
+\end{quote}
+
+The student identifies main, and then is able to quickly trace through the program through func2.
+When the student arrives at func2, he identifies function 4, which is in the argument list, but is confused because no arguments are being passed to the function.
+He is further confused, because the function arguments do not have any default values, which would indicate that func4 could be called without arguments.
+Although in python syntax it still would require parenthesis, which make this odd.
+
+\begin{quote}
+2:35 : thats odd, lets see, so its calling functi-, ooh, \\
+2:40 : its calling function 1. There we go. Uhh, yes, so its calling function 1 with a list a number, the array \\
+2:45 : and 4, and the function 4 as sort of a multiplier. A function to apply. \\
+\end{quote}
+
+He then looks at function 1, is able to identify the use of f in function 1, which is what is passed as function 4.
+The student then works out the semantics of passing functions from how the code functions.
+
+\begin{quote}
+2:50 : Alright, so function 1 is doing the actual work here. Umm, see, it starts with some accumulator 0,  \\
+2:55 : iterates across the uh items in the list, list, \\
+3:00 : and plus equals that function 4 applied \\
+3:05 : to i being the item from the list and that number 4 that was included in function 3. \\
+3:10 : So its going to essentially sum the list multiplied by 4, \\
+3:15 : it would appear, and print that sum out. \\
+3:20 : Yeah, its gonna take, each element 1 2 3 4 and multiply it by 4 \\
+3:25 : add that to 0 and then return the accumulator \\
+3:30 : back up the steps. So function 1 2 3 yeah. \\
+\end{quote}
+
+Once he understands passing functions, he quickly figures out what the inner function does, then unwinds the functions and determines what the overall program does.
+
 ACBE3, Q2.2 
 
 \section{Discussion}
 The student uses two different strategies to solve the problem in each section. While there are differences between the code used in each problem such as one being much longer than the other, and one including a class as opposed to a number of functions, they both have a piece of code that executes. In the first problem, when the student is told to figure out what the code does, he follows the thread of execution. In the other code sample, when the student is first told the overall function of the code and a bug to fix, the student started from the top of the file and moved down until finding a likely area the bug could be fixed. It would have been possible to start with where the program started executing and trace the thread of execution to where the pieces drop. In fact, by looking through the code from the top and stopping at the drop function, the student doesn't actually know if this function is ever used. The student is assuming the author of the program wrote it well. 
 
 \section{Future Work}
-One of the students we interviewed switched things up between evaluation questions (format of code and how it affects strategies the student decides to use?)
+In future work, we hope to explore more decisions of students and the impact on their code evaluation.
+For instance, one of the students we interviewed switched things up between evaluation questions based on the perceived complexity of the code.
+Another evaluated all of the questions starting at the top, but had varying degrees of success depending on the problem.
+A couple of students read through the entire code base for the debugging problems, and got bogged down, we would like to explore the advantages and disadvantages of familiarizing with the entire code base, compared with determining the high level functions of all of the code, or determining where the most likely location of the bug is without regard to anything else.
 \end{document}
