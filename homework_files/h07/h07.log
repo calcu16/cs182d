@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 MAR 2013 18:50
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  12 MAR 2013 21:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -180,8 +180,37 @@ File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 75.
- [3] [4]
-(./h07.aux) ) 
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 90--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--124
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 132--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--150
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 155--163
+
+ []
+
+[6] [7] (./h07.aux) ) 
 Here is how much of TeX's memory you used:
  3054 strings out of 493488
  41962 string characters out of 3141326
@@ -189,9 +218,20 @@ Here is how much of TeX's memory you used:
  6369 multiletter control sequences out of 15000+200000
  8241 words of font info for 29 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,7n,42p,1165b,1186s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/local/texli
+ 41i,7n,42p,1554b,1186s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr17.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti10.pfb>
+Output written on h07.pdf (7 pages, 109816 bytes).
+PDF statistics:
+ 60 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

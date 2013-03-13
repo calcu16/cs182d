@@ -80,11 +80,12 @@ class Board(object):
 \subsubsection{Solution}
 While there could have been multiple solutions, we were looking for students to tell us to add an extra check within the drop function checking if the length of the list representing the column was full.
 
+\newpage
 \section{Narration of Data}
 
-The student begins talking as soon as he is handed the question,
-
-ACBE3, Q1.1 \\
+\subsection{Narration of Q1.1}
+The student begins talking as soon as he is handed Question 1.1 \\
+\line(1,0){325}
 \begin{quote}
 1:55 : Alright umm, so, its got a main, so thats gonna start ummm, its going to print whatever the result of \\
 2:00 : function 3 on 1, 2, 3, 4, some array. So lets see, \\
@@ -99,8 +100,8 @@ ACBE3, Q1.1 \\
 The student identifies main, and then is able to quickly trace through the program through func2.
 When the student arrives at func2, he identifies function 4, which is in the argument list, but is confused because no arguments are being passed to the function.
 He is further confused, because the function arguments do not have any default values, which would indicate that func4 could be called without arguments.
-Although in python syntax it still would require parenthesis, which make this odd.
-
+Although in python syntax it still would require parenthesis, which make this odd. \\
+\line(1,0){325}
 \begin{quote}
 2:35 : thats odd, lets see, so its calling functi-, ooh, \\
 2:40 : its calling function 1. There we go. Uhh, yes, so its calling function 1 with a list a number, the array \\
@@ -108,8 +109,8 @@ Although in python syntax it still would require parenthesis, which make this od
 \end{quote}
 
 He then looks at function 1, is able to identify the use of f in function 1, which is what is passed as function 4.
-The student then works out the semantics of passing functions from how the code functions.
-
+The student then works out the semantics of passing functions from how the code functions. \\
+\line(1,0){325}
 \begin{quote}
 2:50 : Alright, so function 1 is doing the actual work here. Umm, see, it starts with some accumulator 0,  \\
 2:55 : iterates across the uh items in the list, list, \\
@@ -122,16 +123,54 @@ The student then works out the semantics of passing functions from how the code 
 3:30 : back up the steps. So function 1 2 3 yeah. \\
 \end{quote}
 
-Once he understands passing functions, he quickly figures out what the inner function does, then unwinds the functions and determines what the overall program does.
+Once he understands passing functions, he quickly figures out what the inner function does, then unwinds the functions and determines what the overall program does. \\
+\line(1,0){325}
+\subsection{Narration of Q2.2}
+The student begins talking as soon as he is handed Question 2.2 \\
+\line(1,0){325}
+\begin{quote}
+18:54: Alright so we have a board class which is gonna presumably represent the connect 4 board... um...  \\
+19:00: the constructor automatically sets the width to seven oh in this case it forces constraints um like arguments essentially ... and width is always going to be equal to seven, the height equal to six  \\
+19:15: um ... and its going to create an array of arrays or a list of lists depending on what you call it in python ... um ...  \\
+19:28: then it appears to not force the height to be six   \\
+19:32: for i in range width ... yeah that could be cause of problems ... um  \\
+19:42: i don't know if, if lists in python are dynamically allocated or not  \\
+19:49: i don't think yeah i think they are, you can keep adding to them can't you...  \\
+19:54 (I): Yes  \\
+19:55: Yeah ... so i wonder what this is doing. I guess it would be creating ... an array with at least  six - er, seven secondary arrays in it  \\
+20:09: um ... and you don't necessarily [gestures] specify the height ... i guess that doesn't matter you just need to check along the way ... um ...   \\
+\end{quote}
 
-ACBE3, Q2.2 
+The student started at the top of the file with the class and relates it too the problem statement. He looks at the constructor and identifies what the global variables could be. He also talks about arrays and lists, showing confusion about how they work in Python. He finishes this section with an understanding what each of the member variables of the class is. \\
+\line(1,0){325}
+\begin{quote}
+20:20: alright so drop. i guess that is where you drop a piece in ... if column less than self.width um self.board.append player \\
+20:32: oh ok so its doing  [starts drawing on paper] like a ... array of arrays essentially and then it just pops on a color - i don't know are they black and red? I think they are... so sorta pops on a color as they happen and that way  ... oh i guess no append is going on the end isn't it ...um  \\
+21:01: so this is where you would need to do the check [points at drop function with pen] \\
+\end{quote}
 
+The student has moved from the constructor to the drop function which is located right after the constructor within the code. He uses the name of the function to relate it to an action he knows occurs in a connect four game. The code of the function, in particular, the append, helps him understand the board member variable further as an array of arrays. He realizes that this is an appropriate place to fix the given bug.  \\
+\line(1,0){325}
+\begin{quote}
+21:04: if column less than self.width then append it um \\
+21:15: You could do - you could add to that if statement? let's see ... and [writing on paper] um \\
+21:25: column.size, is that a thing? oh no its going to be board at column is what it's going to be board at column\\
+21:38: some sort of size operator\\
+21:42 (I) : It's len\\
+21:44: Ok, len ... um ... less than  I have ...[mumbles] ... and board column . len less than ... height is six so it's gotta be - oh we can just do less than self.height\\
+22:10: ...gotta keep good encapsulation...um ... yeah so this check would go right here [points at if in drop function]\\
+22:20: and that would keep you from ... otherwise it would return false and not allow you to drop if you exceeded the height ... um ... bounds ... that would work.\\
+\end{quote}
+
+After identifying that this is a good place to fix the given bug, the student finds a way to modify the code to actually fix the bug. Further evidence of the student's unfamiliarity with Python is seen by his uncertainty about the size operator. Despite this, the student comes up with appropriate pseudocode to solve the problem. \\
+\line(1,0){325}
+\newpage
 \section{Discussion}
-The student uses two different strategies to solve the problem in each section. While there are differences between the code used in each problem such as one being much longer than the other, and one including a class as opposed to a number of functions, they both have a piece of code that executes. In the first problem, when the student is told to figure out what the code does, he follows the thread of execution. In the other code sample, when the student is first told the overall function of the code and a bug to fix, the student started from the top of the file and moved down until finding a likely area the bug could be fixed. It would have been possible to start with where the program started executing and trace the thread of execution to where the pieces drop. In fact, by looking through the code from the top and stopping at the drop function, the student doesn't actually know if this function is ever used. The student is assuming the author of the program wrote it well. 
+The student uses two different strategies to solve the problem in each section. While there are differences between the code used in each problem such as one being much longer than the other, and one including a class as opposed to a number of functions, they both have pieces of code that execute. In the first problem, when the student is told to figure out what the code does, he follows the thread of execution. By following the thread of execution, when he encounters the function being passed as an argument, he is able to figure out what is occurring by following the execution. It is possible that had the student worked from top to bottom he might not have realized the connection between passing func4 and calling f, and thus taken much longer to understand what the code is doing. In the other code sample, when the student is first told the overall function of the code and a bug to fix, the student started from the top of the file and moved down until finding a likely area that could contain the bug. It would have been possible to start where the program starts executing and trace the thread of execution to where the pieces drop. In fact, by looking through the code from the top and stopping at the drop function, the student doesn't actually know if this function is ever used. The student is assuming the author of the program wrote it well.  Unlike the first code sample, if the student had followed the execution of the program, it would have likely taken him much longer to look at the code where the bug could be fixed.
 
 \section{Future Work}
-In future work, we hope to explore more decisions of students and the impact on their code evaluation.
-For instance, one of the students we interviewed switched things up between evaluation questions based on the perceived complexity of the code.
-Another evaluated all of the questions starting at the top, but had varying degrees of success depending on the problem.
-A couple of students read through the entire code base for the debugging problems, and got bogged down, we would like to explore the advantages and disadvantages of familiarizing with the entire code base, compared with determining the high level functions of all of the code, or determining where the most likely location of the bug is without regard to anything else.
+In future work, we hope to explore strategies used by more students and how it impacts their ability and confidence in overcoming unfamiliar constructs or semantics.
+For instance, one of the students we interviewed switched strategies between two evaluation questions based on the perceived complexity of the code.
+Another started all of the questions by looking at the code from the top down, but had varying degrees of success depending on the problem.
+A couple of students read through the entire code base for the debugging problems, and got bogged down in trying to understand complicated functions, to the point of forgetting the initial debugging problem. We would like to explore the advantages and disadvantages of familiarizing oneself with the code base to varying degrees such as: a detailed understanding of each function,  a high level understanding of the whole program, or determining where the most likely location of the bug is without regard to anything else.
 \end{document}
