@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{listings}
 \usepackage{color}
@@ -17,14 +18,45 @@
 \maketitle
 
 \section{Transcript-Summary-Conclusion Table}
-\subsection{ACBE1, Q3}
-\subsection{ACBE3, Q1}
-\subsection{ACBE3, Q2}
-\subsection{ACBE4, Q1}
-\subsection{ACBE4, Q4}
+\subsection{A note on formatting}
+Following are annotated transcripts of ACBE4Q1, ACBE3Q1, ACBE3Q4, and ACBE1Q3. The assignment asks for these in a table format. Due to the wordy nature of the transcripts and the conclusions (and partially the summaries), we found the table format which restricts the width of each of these categories to less than a third of the page extremely cramped and almost impossible to read. In the interest of readability we have provided these in a format of: \\
+\textit{[time] \\
+Speaker:} \\
+\hspace*{1em} \textit{transcript} \\
+\textbf{Context}: any context required \\
+\textbf{Summary}: brief summary of corresponding transcript \\
+\textbf{Conclusions}: conclusions drawn from corresponding transcript 
+
+\subsection{High Level Points}
+The high level points we are trying to make with these transcripts are:
+\begin{itemize}
+  \item (ACBE4Q1) Execution order appears to work better for the evaluation questions we have provided. Even by starting using a different method, a participant ended up executing the code instead.
+  \item (ACBE3Q1 \& ACBE3Q4)The right method can help a student move past concepts they are not familiar with. While evaluating, a student used execution order which helped him understand a concept, and switching to top down let him ignore a large portion of the code and clear up some misunderstandings.
+  \item (ACBE1Q3) Top down order on a debugging question while not understanding many concepts used in the code can lead to someone forgetting the question.
+\end{itemize}
+
+\subsection{A note on context}
+In the context of each segment of transcript, line numbers are referred to. These line numbers correspond to line numbers of code within the Appendix (Section 2 of this document). Also used are figures which are scanned copies of the paper that the students wrote on during the interviews. The figures follow the annotated transcripts as Section 1.5 of this document.
+
+\newpage
+\subsection{remove this page and put in google doc pages here instead}
+\newpage
+\subsection{Figures}
+Fig 1. ACBE1Q3 \\
+\includegraphics[scale=0.7]{ACBE1Q3.png}
+\newpage
+Fig 2. ACBE4Q1 \\
+\includegraphics[scale=0.6]{ACBE4Q1.png}
+\newpage
+Fig 3. ACBE3Q4 \\
+\includegraphics[scale=0.7]{ACBE3Q4.png}
+\newpage
 \section{Appendix}
 \subsection{Interview Question 1}
 Code given to participants did not include line numbers. \\
+Code given to ACBE1, ACBE2, and ACBE3 was in color. Code given to ACBE4 was in grayscale. \\
+Verbal prompt was given before handing code to participant: \\
+"For this question we would like you to familiarize yourself with some Python code. Please explain to us what you think this code does." \\
 \line(1,0){300}
 \begin{lstlisting}[language=python]
 0		def func2(list, num):
@@ -51,6 +83,11 @@ Code given to participants did not include line numbers. \\
 \newpage
 \subsection{Interview Question 2}
 Code given to participants did not include line numbers. \\
+Code given to ACBE1, ACBE2, and ACBE3 was in color. Code given to ACBE4 was in grayscale. \\
+Verbal prompt was given before handing code to participant: \\
+"For this question, we would like you to again familiarize yourself with some Python code. Please explain to us what you think this code does. " \\
+
+
 \line(1,0){300}
 \begin{lstlisting}[language=python]
 0		def function50(i, L):
@@ -82,6 +119,10 @@ Code given to participants did not include line numbers. \\
 \newpage
 \subsection{Interview Question 3}
 Code given to participants did not include line numbers. \\
+Code given to ACBE1, ACBE2, and ACBE3 was in color. Code given to ACBE4 was in grayscale. 
+Code given to ACBE1 and ACBE2 had double equals signs that were joined together. Code given to ACBE3 and ACBE4 had spaces between the equals signs. \\
+Verbal prompt was given before handing code to participant: \\
+"For this question we would like to have you look at some code in the programming language Ruby. This is the scenario: A coworker recently left on vacation and left two files behind. One of those files is a Date class and your boss wasn't sure if the coworker had finished including leap year support. Your boss would like you to make sure it is supported." \\
 \line(1,0){300} \\
 File 1: \\
 \begin{lstlisting}[language=ruby]
@@ -210,6 +251,10 @@ File 1: \\
 \newpage
 \subsection{Interview Question 4}
 Code given to participant did not contain line numbers. \\
+Code given to ACBE1, ACBE2, and ACBE3 was in color. Code given to ACBE4 was in grayscale. 
+Code given to ACBE1 and ACBE2 had double equals signs that were joined together. Code given to ACBE3 and ACBE4 had spaces between the equals signs. \\
+Verbal prompt was given before handing code to participant: \\
+"For this question we would like to have you look at some code in Python. This is the scenario: You acquired a connect 4 program from a friend. However, the friend has warned you that you can put too many pieces in a column. Determine a possible fix for this bug so that you can enjoy your connect 4 program." \\
 \line(1,0){300}
 \begin{lstlisting}[language=python]
 0 	#!/bin/env python3
