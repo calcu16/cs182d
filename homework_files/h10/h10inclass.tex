@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+\section{ACBE3Q4}
+
+\begin{tabular}{lcp{15cm}}
+[18:54-19:00] & S & 
+Alright so we have a board class which is gonna presumably represent the connect 4 board... um...
+\\
+
+[19:00-19:15] & S &
+the constructor automatically sets the width to seven oh in this case it forces constraints um like arguments essentially ... and width is always going to be equal to seven, the height equal to six
+\\
+
+[19:15-20:09] & S &
+um ... and its going to create an array of arrays or a list of lists depending on what you call it in python ... um ... then it appears to not force the height to be six\\
+& & for i in range width ... yeah that could be cause of problems ... um\\
+& & i don't know if, if lists in python are dynamically allocated or not\\
+& & i don't think yeah i think they are, you can keep adding to them can't you...\\
+& I &
+Yes\\
+& S &
+Yeah ... so i wonder what this is doing. I guess it would be creating ... an array with at least six - er, seven secondary arrays in it \\
+
+[20:09-21:01]& S&
+um ... and you don't necessarily [gestures] specify the height ... i guess that doesn't matter you just need to check along the way ... um ... alright so drop\\
+&&i guess that is where you drop a piece in ... if column less than self.width um self.board.append player\\
+&&oh ok so its doing  [starts drawing on paper] like a ... array of arrays essentially and then it just pops on a color - i don't know are they black and red? I think they are... so sorta pops on a color as they happen and that way  ... oh i guess no append is going on the end isn't it ...um\\
+
+[21:01-21:04]&S&
+so this is where you would need to do the check [points at drop function with pen]\\
+
+[21:04-21:45]&S&
+if column less than self.width then append it um\\
+&&You could do - you could add to that if statement? let's see ... and [writing on paper] um\\
+&&column.size, is that a thing? oh no its going to be board at column is what it's going to be board at column\\
+&&some sort of size operator\\
+&I&
+It's len\\
+&S&
+Ok, len\\
+
+[21:45-22:30]& S&
+um ... less than  I have ...[mumbles] ... and board column . len less than ... height is six so it's gotta be - oh we can just do less than self.height\\
+&&...gotta keep good encapsulation...um ... yeah so this check would go right here [points at if in drop function]\\
+&&and that would keep you from ... otherwise it would return false and not allow you to drop if you exceeded the height ... um ... bounds ... that would work.
+\end{tabular}
+\section{ACBE3Q1}
+\begin{tabular}{lcp{15cm}}
+[1:55-1:58] & S &
+Alright so, its go a main, so that gonna start. \\
+
+[1:58-2:12] & S &
+	So thats going to print whatever the result of function 3 on 1,2,3, and 4 some array.\\
+&& So lets see, function 3 takes a list and returns whatever function 2 does\\
+&& called with the list and some argument 4. \\
+
+[2:12-2:22] & S& 
+	Function 2 returns function 1 with the same two arguments already passed to it,\\
+&&	and function 4, the result of... \\
+	
+[2:25] & S &
+	Which doesn’t have any implied arguments, thats interesting. Umm, \\
+	
+[2:35] & & thats, odd, \\
+
+[2:36-2:50] & S &
+	lets see, so its calling functi-,ooh, it calling function 1.\\
+&&	There we go. Uhh, yes, so its calling function with a list a number, the array and 4,\\
+&&	and the function 4 as sort of a multiplier.\\
+&&	A function to apply. \\
+	
+[2:50-3:17] & S &
+	Alright, so function 1 is doing the actual work here.\\
+&&	Umm, see, it starts with some accumulator 0, iterates across the items in the list,\\
+&&	list and plus equals that function 4 applied to i being the item from the list,\\
+&&	and that number 4 included from function 3.\\
+&&	So its essentially going to sum the list multiplied by 4.\\
+\end{tabular}
+\end{document}
