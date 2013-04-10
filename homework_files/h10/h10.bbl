@@ -1,0 +1,123 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Fitzgerald%
+\ \protect \BOthers {.}}{%
+Fitzgerald%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+fitzgerald2008}
+\APACinsertmetastar {%
+fitzgerald2008}%
+\begin{APACrefauthors}%
+Fitzgerald, S.%
+, Lewandowski, G.%
+, McCauley, R.%
+, Murphy, L.%
+, Simon, B.%
+, Thomas, L.%
+\BCBL {}\ \BBA {} Zander, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Debugging: finding, fixing and flailing, a
+  multi-institutional study of novice debuggers} {Debugging: finding, fixing
+  and flailing, a multi-institutional study of novice debuggers}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Science Education}{18}{2}{93--116}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mosemann%
+\ \BBA {} Wiedenbeck%
+}{%
+Mosemann%
+\ \BBA {} Wiedenbeck%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+mosemann2001}
+\APACinsertmetastar {%
+mosemann2001}%
+\begin{APACrefauthors}%
+Mosemann, R.%
+\BCBT {}\ \BBA {} Wiedenbeck, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Navigation and comprehension of programs by novice
+  programmers} {Navigation and comprehension of programs by novice
+  programmers}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Program Comprehension, 2001. IWPC 2001. Proceedings. 9th
+  International Workshop on} {Program comprehension, 2001. iwpc 2001.
+  proceedings. 9th international workshop on}\ (\BPG~79 -88).
+\newblock
+\begin{APACrefDOI} \doi{10.1109/WPC.2001.921716} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rajlich%
+\ \BBA {} Wilde%
+}{%
+Rajlich%
+\ \BBA {} Wilde%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+1021348}
+\APACinsertmetastar {%
+1021348}%
+\begin{APACrefauthors}%
+Rajlich, V.%
+\BCBT {}\ \BBA {} Wilde, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The role of concepts in program comprehension} {The role
+  of concepts in program comprehension}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Program Comprehension, 2002. Proceedings. 10th
+  International Workshop on} {Program comprehension, 2002. proceedings. 10th
+  international workshop on}\ (\BPG~271 - 278).
+\newblock
+\begin{APACrefDOI} \doi{10.1109/WPC.2002.1021348} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+von Mayrhauser%
+\ \BBA {} Vans%
+}{%
+von Mayrhauser%
+\ \BBA {} Vans%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+402076}
+\APACinsertmetastar {%
+402076}%
+\begin{APACrefauthors}%
+von Mayrhauser, A.%
+\BCBT {}\ \BBA {} Vans, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{aug}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Program comprehension during software maintenance and
+  evolution} {Program comprehension during software maintenance and
+  evolution}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer}{28}{8}{44 -55}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/2.402076} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
