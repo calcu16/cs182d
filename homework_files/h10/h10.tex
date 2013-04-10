@@ -28,11 +28,22 @@ Interview Question 4 (Q4) asks the interviewee to locate and fix a bug in a prog
 The problem can be found in the Appendix attached below as Interview Question 4.
 
 \subsubsection{Solution Description}
-To find the correct solution we start at line 49 where the code starts executing. Some variables are set up for use within the Read-Eval-Print loop that follows. Here the Board is initialized. It calls the \_\_init\_\_ function (line 3) which create a list of lists stored as the self.board variable. The initial lists are empty. It also stores the height and width of the board in class variables. 
+To find the correct solution we start at line 49 where the code starts executing.
+Some variables are set up for use within the Read-Eval-Print loop that follows
+Here the Board is initialized.
+It calls the \_\_init\_\_ function (line 3) which create a list of lists stored as the self.board variable.
+The initial lists are empty.
+It also stores the height and width of the board in class variables. 
 
-At line 55 we see that the program asks for input, the read part of the loop. Then, it calls board.drop(player,c). In the drop function (line 8), we can see that if the column selected is part of the board, the piece is appended to that column in the list of lists. This is analogous to dropping a piece into the board, meaning this is where the bug needs to be fixed by.
+At line 55 we see that the program asks for input, the read part of the loop.
+Then, it calls board.drop(player,c).
+In the drop function (line 8), we can see that if the column selected is part of the board,
+	the piece is appended to that column in the list of lists.
+This is analogous to dropping a piece into the board, meaning this is where the bug needs to be fixed by.
 
-Since we check that the column is valid, we can also check that the column is not full by changing the drop function to include this line between lines 9 and 10: if len(self.board[column]) $<$ self.height:, to make sure that pieces will not be dropped.
+Since we check that the column is valid,
+	we can also check that the column is not full by changing the drop function to include this line between lines 9 and 10:
+if len(self.board[column]) $<$ self.height:, to make sure that pieces will not be dropped.
 
 Other possible solutions that cause the drop function to not be called if the column is full would also be acceptable.
 
@@ -45,14 +56,24 @@ Other possible solutions that cause the drop function to not be called if the co
 % andrew par 2
 
 % beryl par 1
-Rajlich and Wilde talk about concepts both as code formations and domain knowledge. They argue that experts do not understand the entirety of the code they are debugging but simply map their domain knowledge concept on to code concepts to narrow down the code areas they must look at. This mapping of domain knowledge to code occurred in interview ACBE3 as the student connected functions within the code to actions taken in a connect four game. These mappings allowed the student to focus only on a single function instead of understanding the entire program.
+Rajlich and Wilde talk about concepts both as code formations and domain knowledge.
+They argue that experts do not understand the entirety of the code they are debugging but simply map their domain knowledge concept on to code concepts to narrow down the code areas they must look at.
+This mapping of domain knowledge to code occurred in interview ACBE3 as the student connected functions within the code to actions taken in a connect four game.
+These mappings allowed the student to focus only on a single function instead of understanding the entire program.
 
-Rajlich, V., Wilde, N. (2002). \textit{The Role of Concepts in Program Comprehension}. Retrieved from http://www.cs.wayne.edu/~vip/publications/Rajlich.IWPC.2002.RoleOfConcepts.pdf
+Rajlich, V., Wilde, N. (2002). \textit{The Role of Concepts in Program Comprehension}.
+Retrieved from http://www.cs.wayne.edu/~vip/publications/Rajlich.IWPC.2002.RoleOfConcepts.pdf
 
 % beryl par 2
-Mayrhauser and Vans notice that often program comprehension involves multiple ways of thinking about the code. In addition to explaining an umber of them and how they believe they work together, they perform a study and provide results of how often each of the strategies was used by a programmer looking for a section of code within a 40000 line program in a two hour period of time. While most of our interviews were far too short for our subjects to switch between different strategies, we did occasionally see them, and this paper provides information about what might occur if our problems and interviews had been longer. 
+Mayrhauser and Vans notice that often program comprehension involves multiple ways of thinking about the code.
+In addition to explaining an umber of them and how they believe they work together,
+	they perform a study and provide results of how often each of the strategies was used by a programmer looking for a section of code within a 40000 line program in a two hour period of time.
+While most of our interviews were far too short for our subjects to switch between different strategies,
+	we did occasionally see them, and this paper provides information about what might occur if our problems and interviews had been longer. 
 
-von Mayrhauser, A., Vans, A. M. (September, 1995). \textit{ndustrial experience with an integrated code comprehension model}. Retrieved from http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=00469502
+von Mayrhauser, A., Vans, A. M. (September, 1995).
+\textit{ndustrial experience with an integrated code comprehension model}.
+Retrieved from http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=00469502
 
 % conclusion paragraph goes here
 \newpage
@@ -61,7 +82,8 @@ von Mayrhauser, A., Vans, A. M. (September, 1995). \textit{ndustrial experience 
 Code given to participants did not include line numbers. \\
 Code given to ACBE1, ACBE2, and ACBE3 was in color. Code given to ACBE4 was in grayscale. \\
 Verbal prompt was given before handing code to participant: \\
-"For this question we would like you to familiarize yourself with some Python code. Please explain to us what you think this code does." \\
+"For this question we would like you to familiarize yourself with some Python code.
+Please explain to us what you think this code does." \\
 \line(1,0){300}
 \begin{lstlisting}[language=python]
 0		def func2(list, num):
@@ -89,9 +111,13 @@ Verbal prompt was given before handing code to participant: \\
 \subsection{Interview Question 4}
 Code given to participant did not contain line numbers. \\
 Code given to ACBE1, ACBE2, and ACBE3 was in color. Code given to ACBE4 was in grayscale. 
-Code given to ACBE1 and ACBE2 had double equals signs that were joined together. Code given to ACBE3 and ACBE4 had spaces between the equals signs. \\
+Code given to ACBE1 and ACBE2 had double equals signs that were joined together.
+Code given to ACBE3 and ACBE4 had spaces between the equals signs. \\
 Verbal prompt was given before handing code to participant: \\
-"For this question we would like to have you look at some code in Python. This is the scenario: You acquired a connect 4 program from a friend. However, the friend has warned you that you can put too many pieces in a column. Determine a possible fix for this bug so that you can enjoy your connect 4 program." \\
+"For this question we would like to have you look at some code in Python.
+This is the scenario: You acquired a connect 4 program from a friend.
+However, the friend has warned you that you can put too many pieces in a column.
+Determine a possible fix for this bug so that you can enjoy your connect 4 program." \\
 \line(1,0){300}
 \begin{lstlisting}[language=python]
 0 	#!/bin/env python3
