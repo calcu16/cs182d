@@ -6,6 +6,7 @@
 \title{Homework 11 - Analysis Revision}
 \author{Andrew Carter and Beryl Egerter}
 
+\setlength{\parindent}{0cm}
 \begin{document}
 \maketitle
 \section{Overview of Claims \& Introduction to Analysis}
@@ -13,7 +14,9 @@
 We will show that a student used different strategies to decide which order to look at functions between two problems.
 For an evaluation problem, the student evaluated the code in the order it would have been executed.
 For a debugging problem, the student started looking at the code at the top of the paper and continued down until reaching a likely candidate for the location of the bug.
-For this student, each strategy appear to help him understand unfamiliar constructs, which then allows him to solve the problem.
+For this student, each strategy appear to help him understand unfamiliar constructs, which then allows him to solve the problem. 
+We include two partial transcripts from a debugging and an evaluation problem to back these claims. 
+The student whom we have transcribed has taken a couple of computer science classes at Harvey Mudd College, including Principles and Practices of Computer Science, Data Structures and Program Development, and has tutored extensively for the Data Structures and Program Development class. 
 
 \section{Play-by-Play}
 \subsection{Q1}
@@ -52,7 +55,7 @@ The student relates the board class to the game described in the problem stateme
 3& i don't know if, if lists in python are dynamically allocated or not [...] \\
 4& so i wonder what this is doing. I guess it would be creating - an array with at least six - er, seven secondary arrays in it [...]\\
 \end{tabular}\\
-The student is confused by arrays/lists in Python. \\ \\
+The student mentions multiple possibilities for the data structure of the board member. \\ \\
 \begin{tabular}{lp{13cm}}
 5& so drop, i guess that is where you drop a piece in - if column less than self.width um self.board.append player \\
 6&oh ok so its doing  [starts drawing on paper] like a - array of arrays essentially and then it just pops on a color [...] as they happen [...] \\
@@ -66,15 +69,16 @@ The student says the drop function is where the bug could be fixed.
 
 
 \section{Interpretation}
+All line numbers in the following paragraphs refer to line numbers in the transcript of the corresponding problem. \\
 
 The student is evaluating in execution order in Q1.
 The student is unfamiliar with the semantics of passing a function as an argument in Python.
-Initially, as demonstrated on line ?, he tries to call the function which led to confusion since there were no arguments. On line ?, he looks for implied arguments, further evidence that he is trying to call this function.
-However, by continuing in execution order to function 1,he is able to notice how the argument he had tried to call earlier is now being used as a function to apply, as stated in line ?.  \\
+Initially, as demonstrated on line 3 of Q1, he tries to call the function which led to confusion since there were no arguments. On line 4 of Q1, he looks for implied arguments, further evidence that he is trying to call this function.
+However, by continuing in execution order to function 1,he is able to notice how the argument he had tried to call earlier is now being used as a function to apply, as stated in line 9 of Q1.  \\
 
 The student is debugging by reading from top down, stopping upon encountering a likely solution, in Q4.
 Upon reaching the creation of the board data member, the student's lack of experience with Python causes him to be confused about how the physical representation of a connect four board maps onto this data member.
-As he continues reading top down, the Python list functions used in the drop function help him determine which of the possibilities (previously enumerated on line ?) were true for the board data member.
+As he continues reading top down, the Python list functions used in the drop function help him determine which of the possibilities (previously enumerated on line 3 of Q4) were true for the board data member.
 This helped him map the physical representation onto the data member.
 This knowledge helps him fix the bug which had been given to him in relation to the physical connect four board.  \\
 
@@ -91,5 +95,11 @@ In Q4, some other strategies we have seen have led the student to get stuck in o
 
 
 \section{Summary}
+We have shown that a student used different strategies to decide which order to look at functions between two problems.
+For the evaluation problem, the student evaluated the code in the order it would have been executed. 
+In the process, he was initially stumped by the code passing a function as an argument, but realized what was happening by continuing to follow the path of execution. 
+For the debugging problem, the student started looking at the code at the top of the paper and continued down until reaching a likely candidate for the location of the bug. 
+As he debugged, he was initially unsure about the data structure used as the board data member, but as he continued down, he was able to find code that supported one of the possibilities he had enumerated earlier.
+For this student, each strategy appeared to help him understand unfamiliar constructs, allowing him to solve the problems. 
 
 \end{document}
