@@ -10,12 +10,7 @@ The student whom we have transcribed has taken a couple of computer science clas
 
 \section{Q1}
 % First sentence
-\begin{lstlisting}[language=python]
-def main():
-    ...
-
-main()
-\end{lstlisting}
+% main
 He begins by identifying the call to main.
 
 ``Alright so, its got a main, so thats gonna start. [...]''\\
@@ -24,8 +19,44 @@ The student starts at the main function, it is the very first thing he identifie
 He continues evaluating the code in execution order.
 This student's evaluating strategy clearly is identify where execution starts and then continue in execution order.
 
-The student continues in execution order until he hits func4
+The student continues in execution order until he hits func2,
+% func2
 
+The student tries to evaluate func4 instead of passing it to func1.
+
+``Function 2 returns function 1 with the same two arguments already passed to it, and function 4, the result of -''
+
+He immediately jumps to ``the result of,'' even there are no parenthesis that are required for function calls.
+Clearly he is unfamiliar with passing functions as arguments in Python.
+
+The student tries to resolve his confusion by looking at func4
+% func4
+
+He tries to find ways to call func4, without any arguments,
+
+``Which doesn't have any implied arguments, thats interesting. Umm, thats odd [pause]''
+
+In this case he is working off of the hypothesis that if you have default arguments to a function,
+  then you can call the function parenthesis.
+However, the student notes that there are no default arguments (he refers to them as implied arguments).
+Note, that even though the program does not call func4 from func2, from the student's perspective, because he believes func4 needs to be called, func4 was next in execution order.
+
+He continues onto func1, even though he is confused about how func4 works in func2.
+% func1
+
+He notes that the \texttt{f} in func1 is the same as func4 in func2.
+\begin{tabular}{lp{13cm}}
+6& lets see, so its calling functi-,ooh, it calling function 1.\\
+7&There we go. Uhh, yes, so its calling function with a list a number, the array and 4,\\
+8&and the function 4 as sort of a multiplier.\\
+9&A function to apply. \\
+\end{tabular}\\
+The student is able to figure that func4 is being passed as an argument.
+He note that function 4 is being used as a multiplier, and the succinctly describes it as a function to apply.
+He clearly now understands that functions can be passed as arguments, and the semantics of doing so.
+The student drew this conclusion by continuing with execution order, and matching up the f in function 1 with the func4 in function 2.
+It appears that following execution order helped him figure this out, he might not have been able to make that connection if he had not looked at function 1 while being confused about the need for func4.
+However since he was already primed to call a function he was able to identify that the argument f got called.
 
 
 \subsection{Play-by-Play}
@@ -111,5 +142,3 @@ In the process, he was initially stumped by the code passing a function as an ar
 For the debugging problem, the student started looking at the code at the top of the paper and continued down until reaching a likely candidate for the location of the bug. 
 As he debugged, he was initially unsure about the data structure used as the board data member, but as he continued down, he was able to find code that supported one of the possibilities he had enumerated earlier.
 For this student, each strategy appeared to help him understand unfamiliar constructs, allowing him to solve the problems. 
-
-\newpage
