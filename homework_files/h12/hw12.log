@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  22 APR 2013 22:54
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  23 APR 2013 20:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -150,31 +150,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 28--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 34--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 46--50
 
  []
 
 [2] [3] [4] (./hw12.aux) ) 
 Here is how much of TeX's memory you used:
- 1935 strings out of 493488
- 27733 string characters out of 3141326
+ 1936 strings out of 493488
+ 27751 string characters out of 3141326
  85999 words of memory out of 3000000
- 5286 multiletter control sequences out of 15000+200000
+ 5287 multiletter control sequences out of 15000+200000
  7280 words of font info for 26 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  26i,6n,32p,816b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -183,7 +183,7 @@ c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr17.pfb>
-Output written on hw12.pdf (4 pages, 55892 bytes).
+Output written on hw12.pdf (4 pages, 59794 bytes).
 PDF statistics:
  33 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream
