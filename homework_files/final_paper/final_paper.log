@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  26 APR 2013 17:07
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  26 APR 2013 18:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -529,8 +529,18 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 [15
 
 
-] [16] [17] [18] [19]) (./final_paper.aux (./abstract.aux)
-(./introduction.aux) (./previous_research.aux) (./data_collection_methods.aux)
+] [16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 124--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--203
+
+ []
+
+[18] [19]) (./final_paper.aux (./abstract.aux) (./introduction.aux)
+(./previous_research.aux) (./data_collection_methods.aux)
 (./data_analysis_methods.aux) (./problem_description.aux) (./analysis.aux)
 (./conclusion.aux) (./future_work.aux) (./appendix.aux))
 
@@ -554,7 +564,7 @@ sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
 al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on final_paper.pdf (19 pages, 180873 bytes).
+Output written on final_paper.pdf (19 pages, 180712 bytes).
 PDF statistics:
  175 PDF objects out of 1000 (max. 8388607)
  117 compressed objects within 2 object streams

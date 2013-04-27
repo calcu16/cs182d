@@ -117,58 +117,90 @@ Determine a possible fix for this bug so that you can enjoy your connect 4 progr
 \newpage
 
 \section{Full Transcripts of ACBE3, Q1 and Q4}
-\subsection{Q1}
-\begin{quote}
-[1:55 Begin] \\`
-S [1:55] : Alright umm, so, its got a main, so thats gonna start ummm, its going to print whatever the result of \\
-S [2:00] : function 3 on 1, 2, 3, 4, some array. So lets see, \\
-S [2:05] : Function 3 takes a list and returns whatever function  2 does called with list \\
-S [2:10] : and some argument 4. Function 2 returns function 1 \\
-S [2:15] : with the same two arguments already passed to it, and \\
-S [2:20] : function 4 the result of, which doesn't have any \\
-S [2:25] : implied arguments, thats interesting. Umm, \\
-S [2:30] : [pause] \\
-S [2:35] : thats odd, lets see, so its calling functi-, ooh, \\
-S [2:40] : its calling function 1. There we go. Uhh, yes, so its calling function 1 with a list a number, the array \\
-S [2:45] : and 4, and the function 4 as sort of a multiplier. A function to apply. \\
-S [2:50] : Alright, so function 1 is doing the actual work here. Umm, see, it starts with some accumulator 0,  \\
-S [2:55] : iterates across the uh items in the list, list, \\
-S [3:00] : and plus equals that function 4 applied \\
-S [3:05] : to i being the item from the list and that number 4 that was included in function 3. \\
-S [3:10] : So its going to essentially sum the list multiplied by 4, \\
-S [3:15] : it would appear, and print that sum out. \\
-S [3:20] : Yeah, its gonna take, each element 1 2 3 4 and multiply it by 4 \\
-S [3:25] : add that to 0 and then return the accumulator \\
-S [3:30] : back up the steps. So function 1 2 3 yeah. 
+
+S indicates the student and I the interviewer for the problem (Q4 is Andrew Carter).
+\subsection{Q1: Evaluation}
+
+[1:55 Begin] \\
+\begin{tabular}{llp{13cm}}
+S&[1:55] :&Alright umm, so, its got a main, so thats gonna start ummm, its going to print whatever the result of \\
+S&[2:00] :& function 3 on 1, 2, 3, 4, some array. So lets see, \\
+S&[2:05] :& Function 3 takes a list and returns whatever function  2 does called with list \\
+S&[2:10] :& and some argument 4. Function 2 returns function 1 \\
+S&[2:15] :& with the same two arguments already passed to it, and \\
+S&[2:20] :& function 4 the result of, which doesn't have any \\
+S&[2:25] :& implied arguments, thats interesting. Umm, \\
+S&[2:30] :& [pause] \\
+S&[2:35] :& thats odd, lets see, so its calling functi-, ooh, \\
+S&[2:40] :& its calling function 1. There we go. Uhh, yes, so its calling function 1 with a list a number, the array \\
+S&[2:45] :& and 4, and the function 4 as sort of a multiplier. A function to apply. \\
+S&[2:50] :& Alright, so function 1 is doing the actual work here. Umm, see, it starts with some accumulator 0,  \\
+S&[2:55] :& iterates across the uh items in the list, list, \\
+S&[3:00] :& and plus equals that function 4 applied \\
+S&[3:05] :& to i being the item from the list and that number 4 that was included in function 3. \\
+S&[3:10] :& So its going to essentially sum the list multiplied by 4, \\
+S&[3:15] :& it would appear, and print that sum out. \\
+S&[3:20] :& Yeah, its gonna take, each element 1 2 3 4 and multiply it by 4 \\
+S&[3:25] :& add that to 0 and then return the accumulator \\
+S&[3:30] :& back up the steps. So function 1 2 3 yeah. 
+\end{tabular} \\ 
 
 [3:35 End]
-\end{quote}
 
-\subsection{Q4}
-\begin{quote}
-[18:54 Begin]
-S [18:54]: Alright so we have a board class which is gonna presumably represent the connect 4 board - um -
-S [19:00]: the constructor automatically sets the width to seven oh in this case it forces constraints um like arguments essentially - and width is always going to be equal to seven, the height equal to six
-S [19:15]: um - and its going to create an array of arrays or a list of lists depending on what you call it in python - um -
-S [19:28]: then it appears to not force the height to be six 
-S [19:32]: for i in range width - yeah that could be cause of problems - um
-S [19:42]: i don't know if, if lists in python are dynamically allocated or not
-S [19:49]: i don't think yeah i think they are, you can keep adding to them can't you -
-I [19:54]: Yes
-S [19:55]: Yeah - so i wonder what this is doing. I guess it would be creating ... an array with at least six - er, seven secondary arrays in it
-S [20:09]: um ... and you don't necessarily [gestures] specify the height ... i guess that doesn't matter you just need to check along the way ... um ... alright so drop
-S [20:20]: i guess that is where you drop a piece in ... if column less than self.width um self.board.append player
-S [20:32]: oh ok so its doing  [starts drawing on paper] like a ... array of arrays essentially and then it just pops on a color - i don't know are they black and red? I think they are... so sorta pops on a color as they happen and that way  ... oh i guess no append is going on the end isn't it ...um 
-S [21:01]: so this is where you would need to do the check [points at drop function with pen]
-S [21:04]: if column less than self.width then append it um 
-S [21:15]: You could do - you could add to that if statement? let's see ... and [writing on paper] um 
-S [21:25]: column.size, is that a thing? oh no its going to be board at column is what it's going to be board at column
-S [21:38]: some sort of size operator
-I: It's len
-S: Ok, len
-S: [21:45]: um ... less than  I have ...[mumbles] ... and board column . len less than ... height is six so it's gotta be - oh we can just do less than self.height
-S [22:10]: ...gotta keep good encapsulation...um ... yeah so this check would go right here [points at if in drop function]
-S [22:20]: and that would keep you from ... otherwise it would return false and not allow you to drop if you exceeded the height ... um ... bounds ... that would work. 
+
+
+\subsection{Q4: Debugging}
+
+[18:55 Begin] \\
+\begin{tabular}{llp{13cm}}
+S&[18:55] :& Alright so we have a board class which is gonna presumably represent the connect 4 board  \\
+S&[19:00] :& - um - the constructor automatically sets the width to seven \\
+S&[19:05] :& oh in this case it forces constraints um \\
+S&[19:10] :& like arguments essentially - and width is always going to be equal to seven, the height equal to six \\
+S&[19:15] :& um - and its going to create an array of arrays \\
+S&[19:20] :& or a list of lists depending on what you call it in python \\
+S&[19:25] :& - um - then it appears to not force \\
+S&[19:30] :& the height to be six. For i in range width - \\ 
+S&[19:35] :& yeah that could be \\
+S&[19:40] :& cause of problems - um - i don't know if, \\
+S&[19:45] :& if lists in python are dynamically allocated or not. I don't think - \\
+S&[19:50] :& yeah i think they are, you can keep adding to them can't you - \\
+I&& Yes. \\
+S&[19:55] :& Yeah - so i wonder what this is doing. \\
+S&[20:00] :& I guess it would be creating ... an array with at least six - er, \\
+S&[20:05] :& seven secondary arrays in it. Um - \\
+S&[20:10] :& and you don't necessarily [gestures] specify the height - i guess \\
+S&[20:15] :& that doesn't matter you just need to check along the way - um - alright so drop \\
+S&[20:20] :& I guess that is where you drop a piece in. If column less than self dot width \\
+S&[20:25] :& um self dot board dot append \\
+S&[20:30] :& player. Oh ok so its doing \\
+S&[20:35] :& [starts drawing on paper] like a - array of arrays \\
+S&[20:40] :& essentially and then it just pops \\
+S&[20:45] :& on a color - i don't know are they black and red? I think they are. \\
+S&[20:50] :& so sorta pops on a color as they happen and that way - \\
+S&[20:55] :& oh i guess no append is going on the end isn't it. Um- \\ 
+S&[21:00] :& so this is where you would need to do the check [points at drop function with pen] \\
+S&[21:05] :& if column less than self dot width then append it \\
+S&[21:10] :& - um  - \\
+S&[21:15] :& You could do - you could add to that if statement? Let's see \\
+S&[21:20] :& and [writing on paper] um \\
+S&[21:25] :& column dot size, is that a thing? \\
+S&[21:30] :& Oh no its going to be board at column is what it's going to be. Board \\
+S&[21:35] :& at column. Some sort of size operator - \\
+I&[21:40] :& It's len \\
+S&& Ok, len. Um - \\
+S&[21:45] :& less than. I have -[inaudible] \\
+S&[21:50] :& and board \\
+S&[21:55] :& column dot len \\
+S&[22:00] :& less than - height is six so it's gotta be \\
+S&[22:05] :& Oh we can just do less than self dot height. \\
+S&[22:10] :& -gotta keep good encapsulation. Um - yeah. \\
+S&[22:15] :& So this check would go right here [points at if in drop function] and that would keep you \\
+S&[22:20] :& from - otherwise it would return false \\
+S&[22:25] :& and not allow you to drop if you exceeded the height . Um - bounds \\
+S&[22:30] :& That would work. \\
+\end{tabular} \\
+
 [22:30 End]
-\end{quote}
+
 \newpage
