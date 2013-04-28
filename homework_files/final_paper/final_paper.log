@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  26 APR 2013 18:12
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  27 APR 2013 22:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -460,76 +460,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--68
 [8 <./Q4diagram.pdf>] [9])
 \openout2 = `analysis.aux'.
 
- (./analysis.tex
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-[10
+ (./analysis.tex [10
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
 (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 77--82
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--95
+Underfull \hbox (badness 10000) in paragraph at lines 108--113
 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 100.
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--126
+
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 131.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 100.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 131.
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--112
+Underfull \hbox (badness 10000) in paragraph at lines 137--143
 
  []
 
-[11]) [12]
+[12]) [13]
 \openout2 = `conclusion.aux'.
 
- (./conclusion.tex [13
+ (./conclusion.tex [14
 
 
 ])
 \openout2 = `future_work.aux'.
 
- (./future_work.tex [14
+ (./future_work.tex [15
 
 
 ])
 No file final_paper.bbl.
 \openout2 = `appendix.aux'.
 
-(./appendix.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
- (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
-
-[15
+(./appendix.tex [16
 
 
-] [16] [17]
+] [17] [18]
 Underfull \hbox (badness 10000) in paragraph at lines 124--147
 
  []
@@ -539,7 +535,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--203
 
  []
 
-[18] [19]) (./final_paper.aux (./abstract.aux) (./introduction.aux)
+[19] [20]) (./final_paper.aux (./abstract.aux) (./introduction.aux)
 (./previous_research.aux) (./data_collection_methods.aux)
 (./data_analysis_methods.aux) (./problem_description.aux) (./analysis.aux)
 (./conclusion.aux) (./future_work.aux) (./appendix.aux))
@@ -550,7 +546,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  4608 strings out of 493488
  65330 string characters out of 3141326
- 197210 words of memory out of 3000000
+ 197037 words of memory out of 3000000
  7790 multiletter control sequences out of 15000+200000
  8409 words of font info for 30 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -564,10 +560,10 @@ sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
 al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on final_paper.pdf (19 pages, 180712 bytes).
+Output written on final_paper.pdf (20 pages, 181680 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
+ 178 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
