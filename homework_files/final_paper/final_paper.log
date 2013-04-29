@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2013 11:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2013 11:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -494,7 +494,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  4763 strings out of 493488
  67356 string characters out of 3141326
- 205074 words of memory out of 3000000
+ 205092 words of memory out of 3000000
  7974 multiletter control sequences out of 15000+200000
  8409 words of font info for 30 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -508,7 +508,7 @@ sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
 al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on final_paper.pdf (15 pages, 180436 bytes).
+Output written on final_paper.pdf (15 pages, 180470 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams
