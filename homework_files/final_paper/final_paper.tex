@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage{apacite}
+\usepackage{newclude}
 \lstset{
 	keywordstyle=\color{red},
 	stringstyle=\color{blue},
@@ -20,15 +21,15 @@
 \begin{document}
 \maketitle
 
-\include{abstract}
-\include{introduction}
-\include{previous_research}
-\include{data_collection_methods}
-\include{data_analysis_methods}
-\include{problem_description}
-\include{analysis}
-\include{conclusion}
-\include{future_work}
+\include*{abstract}
+\include*{introduction}
+\include*{previous_research}
+\include*{data_collection_methods}
+\include*{data_analysis_methods}
+\include*{problem_description}
+\include*{analysis}
+\include*{conclusion}
+\include*{future_work}
 
 \newpage
 \bibliographystyle{apacite}

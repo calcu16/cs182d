@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2013 11:42
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2013 11:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -176,24 +176,35 @@ Package: apacite 2012/02/25 v6.01 APA citation
 \bibitemsep=\skip49
 \biblabelsep=\skip50
 )
-(./final_paper.aux (./abstract.aux) (./introduction.aux)
-(./previous_research.aux) (./data_collection_methods.aux)
-(./data_analysis_methods.aux) (./problem_description.aux) (./analysis.aux)
-(./conclusion.aux) (./future_work.aux) (./appendix.aux))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/frankenstein/newclude.sty
+Package: newclude 1999/11/02 v2 A new system for including files (Frankenstein'
+s backbone)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/frankenstein/moredefs.sty
+Package: moredefs 2001/08/31 v1.8 more defining commands (Frankenstein's brain)
+
+\sc@toks@a=\toks19
+\sc@toks@b=\toks20
+)
+\nc@toks@a=\toks21
+\c@IncludeDepth=\count101
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/frankenstein/tag.sto)
+(./final_paper.aux)
 \openout1 = `final_paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -229,20 +240,20 @@ LaTeX Font Info:    ... okay on input line 20.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count101
+\c@lstlisting=\count102
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
+\scratchcounter=\count103
 \scratchdimen=\dimen119
 \scratchbox=\box28
-\nofMPsegments=\count103
-\nofMParguments=\count104
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count105
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count106
 \MPscratchDim=\dimen120
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks20
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks23
 ) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -287,7 +298,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@maskedRefs=\count108
+\c@maskedRefs=\count109
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2012/02/25 v6.01 apacite language file
@@ -295,23 +306,13 @@ LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 21.
+(Font)              <12> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 21.
+(Font)              <8> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 21.
- [1
+(Font)              <6> on input line 22.
 
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `abstract.aux'.
-
- (./abstract.tex)
-[2
-
-]
-\openout2 = `introduction.aux'.
-
- (./introduction.tex
+(./abstract.tex) (./introduction.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
@@ -331,13 +332,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--28
 
  []
 
-[3
+[1
 
-
-])
-\openout2 = `previous_research.aux'.
-
- (./previous_research.tex
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+(./previous_research.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
@@ -374,13 +372,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--31
 
  []
 
-[4
-
-
-])
-\openout2 = `data_collection_methods.aux'.
-
- (./data_collection_methods.tex
+[2]) (./data_collection_methods.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
 
  []
@@ -390,13 +382,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
-) [5
-
-
-]
-\openout2 = `data_analysis_methods.aux'.
-
- (./data_analysis_methods.tex
+) (./data_analysis_methods.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
@@ -406,25 +392,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  []
 
-[6
-
-
-])
-\openout2 = `problem_description.aux'.
-
- (./problem_description.tex
+[3]) (./problem_description.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 19.
 
-<Q1diagram.pdf, id=25, 514.92375pt x 196.735pt>
+<Q1diagram.pdf, id=16, 514.92375pt x 196.735pt>
 File: Q1diagram.pdf Graphic file (type pdf)
  <use Q1diagram.pdf>
 Package pdftex.def Info: Q1diagram.pdf used on input line 26.
 (pdftex.def)             Requested size: 469.75502pt x 179.48239pt.
 
-<Q4diagram.pdf, id=26, 311.1625pt x 297.11pt>
+<Q4diagram.pdf, id=17, 311.1625pt x 297.11pt>
 File: Q4diagram.pdf Graphic file (type pdf)
  <use Q4diagram.pdf>
 Package pdftex.def Info: Q4diagram.pdf used on input line 43.
@@ -434,10 +414,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--56
 
  []
 
-[7
-
-
- <./Q1diagram.pdf>]
+[4 <./Q1diagram.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
@@ -452,13 +429,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--69
 
  []
 
-[8 <./Q4diagram.pdf>])
-\openout2 = `analysis.aux'.
-
- (./analysis.tex [9
-
-
-]
+[5 <./Q4diagram.pdf>]) (./analysis.tex
 (/usr/local/texlive/2012/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
@@ -474,7 +445,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
-[10]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
@@ -501,26 +472,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--143
 
  []
 
-[11]) [12]
-\openout2 = `conclusion.aux'.
-
- (./conclusion.tex [13
-
-
-])
-\openout2 = `future_work.aux'.
-
- (./future_work.tex [14
-
-
-])
+[7] [8]) (./conclusion.tex [9]) (./future_work.tex [10])
 No file final_paper.bbl.
-\openout2 = `appendix.aux'.
+(./appendix.tex [11
 
-(./appendix.tex [15
-
-
-] [16] [17]
+] [12] [13]
 Underfull \hbox (badness 10000) in paragraph at lines 124--147
 
  []
@@ -530,22 +486,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--203
 
  []
 
-[18] [19]) (./final_paper.aux (./abstract.aux) (./introduction.aux)
-(./previous_research.aux) (./data_collection_methods.aux)
-(./data_analysis_methods.aux) (./problem_description.aux) (./analysis.aux)
-(./conclusion.aux) (./future_work.aux) (./appendix.aux))
+[14] [15]) (./final_paper.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4610 strings out of 493488
- 65355 string characters out of 3141326
- 197064 words of memory out of 3000000
- 7792 multiletter control sequences out of 15000+200000
+ 4763 strings out of 493488
+ 67356 string characters out of 3141326
+ 205074 words of memory out of 3000000
+ 7974 multiletter control sequences out of 15000+200000
  8409 words of font info for 30 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,9n,44p,809b,1461s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,44p,812b,1461s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -555,10 +508,10 @@ sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
 al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on final_paper.pdf (19 pages, 181675 bytes).
+Output written on final_paper.pdf (15 pages, 180436 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
+ 162 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
