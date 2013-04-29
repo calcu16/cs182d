@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2013 11:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2013 11:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -414,9 +414,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--11
 
  (./problem_description.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 20.
+(Font)              <7> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 20.
+(Font)              <5> on input line 19.
 
 <Q1diagram.pdf, id=25, 514.92375pt x 196.735pt>
 File: Q1diagram.pdf Graphic file (type pdf)
@@ -427,10 +427,10 @@ Package pdftex.def Info: Q1diagram.pdf used on input line 26.
 <Q4diagram.pdf, id=26, 311.1625pt x 297.11pt>
 File: Q4diagram.pdf Graphic file (type pdf)
  <use Q4diagram.pdf>
-Package pdftex.def Info: Q4diagram.pdf used on input line 42.
+Package pdftex.def Info: Q4diagram.pdf used on input line 43.
 (pdftex.def)             Requested size: 234.8775pt x 224.2736pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--55
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
 
  []
 
@@ -438,17 +438,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--55
 
 
  <./Q1diagram.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--63
+Underfull \hbox (badness 10000) in paragraph at lines 59--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--68
+Underfull \hbox (badness 10000) in paragraph at lines 65--69
 
  []
 
@@ -537,14 +537,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--203
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  4610 strings out of 493488
  65355 string characters out of 3141326
- 197065 words of memory out of 3000000
+ 197064 words of memory out of 3000000
  7792 multiletter control sequences out of 15000+200000
  8409 words of font info for 30 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -558,7 +555,7 @@ sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
 al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on final_paper.pdf (19 pages, 180631 bytes).
+Output written on final_paper.pdf (19 pages, 181675 bytes).
 PDF statistics:
  175 PDF objects out of 1000 (max. 8388607)
  117 compressed objects within 2 object streams
