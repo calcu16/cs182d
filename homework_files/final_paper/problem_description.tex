@@ -28,7 +28,7 @@ When we unwind we just hit return statements until main, when we print 40. This 
 \label{fig-q1}
 \end{figure*}
  
-\newpage
+%\newpage
 \subsection{Q4}
 \subsubsection{Summary}
 Interview Question 4 (Q4) asks the interviewee to locate and fix a bug in a program that they are told plays connect four.
@@ -49,21 +49,22 @@ The following solution uses execution order to come to the correct conclusion. O
 To find the correct solution we start at line 49 where the code starts executing.
 Some variables are set up to be used later. 
 Here a Board is initialized.
-It calls the \_\_init\_\_ function (line 3) which create a list of lists stored as the self.board variable.
+It calls the \_\_init\_\_ function (line 3) which creates a list of lists stored as the self.board variable.
 The initial lists are empty.
 It also stores the height and width of the board in class variables. \\
 
-Here the program starts a Read-Eval-Print loop. A Read-Eval-Print loop is a structure that takes in input, evaluates how that changes itself, and then prints a representation of itself. In Figure \ref{fig-q2} we can see the structure of this loop and the previous initialization as well as the important function that correspond to each part of the loop.\\
+Here the program starts a Read-Eval-Print loop. A Read-Eval-Print loop is a structure that takes in input, evaluates how that changes the stored data, and then prints a representation of the data. Figure \ref{fig-q2} shows the structure of this loop and the previous initialization as well as the function calls that correspond to each part of the loop.\\
 
-At line 55 we see that the program asks for input, the read part of the loop.
-Then, it calls board.drop(player,c).
+At line 55, the program asks for input, the read part of the loop.
+Then, it calls board.drop(player,c) which adds a piece to the column that the user has specified through the input.
 In the drop function (line 8), we can see that if the column selected is part of the board,
 	the piece is appended to that column in the list of lists.
-This is analogous to dropping a piece into the board, meaning this is where the bug needs to be fixed by.\\
+This is analogous to dropping a piece into the board, meaning this is a logical place where the bug could be fixed.\\
 
 Since we check that the column is valid,
-	we can also check that the column is not full by changing the drop function to include this line between lines 9 and 10:
-if len(self.board[column]) $<$ self.height:, to make sure that pieces will not be dropped.\\
+we can also check that the column is not full by changing the drop function to include this line between lines 9 and 10:
+if len(self.board[column]) $<$ self.height:.
+This code will make sure that pieces will not be dropped in full columns.\\
 
 Other possible solutions that cause the drop function to not be called if the column is full would also be acceptable.
 
