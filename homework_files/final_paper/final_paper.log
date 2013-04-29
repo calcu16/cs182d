@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2013 11:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2013 11:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -472,11 +472,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--143
 
  []
 
-[7] [8]) (./conclusion.tex [9]) (./future_work.tex [10])
-No file final_paper.bbl.
-(./appendix.tex [11
+[7] [8]) (./conclusion.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
-] [12] [13]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
+
+ []
+
+) (./future_work.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+[9])
+No file final_paper.bbl.
+(./appendix.tex [10
+
+] [11] [12]
 Underfull \hbox (badness 10000) in paragraph at lines 124--147
 
  []
@@ -486,9 +501,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--203
 
  []
 
-[14] [15]) (./final_paper.aux)
+[13] [14]) (./final_paper.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -508,10 +526,10 @@ sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
 al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on final_paper.pdf (15 pages, 180470 bytes).
+Output written on final_paper.pdf (14 pages, 182173 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 159 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
