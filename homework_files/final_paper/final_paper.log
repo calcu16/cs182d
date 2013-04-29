@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  27 APR 2013 22:03
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  29 APR 2013 11:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -176,10 +176,7 @@ Package: apacite 2012/02/25 v6.01 APA citation
 \bibitemsep=\skip49
 \biblabelsep=\skip50
 )
-(./final_paper.aux (./abstract.aux) (./introduction.aux)
-(./previous_research.aux) (./data_collection_methods.aux)
-(./data_analysis_methods.aux) (./problem_description.aux) (./analysis.aux)
-(./conclusion.aux) (./future_work.aux) (./appendix.aux))
+No file final_paper.aux.
 \openout1 = `final_paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -194,7 +191,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -305,10 +301,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 \openout2 = `abstract.aux'.
 
- (./abstract.tex
+ (./abstract.tex)
 [2
 
-])
+]
 \openout2 = `introduction.aux'.
 
  (./introduction.tex
@@ -390,10 +386,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
-[5
+) [5
 
 
-])
+]
 \openout2 = `data_analysis_methods.aux'.
 
  (./data_analysis_methods.tex
@@ -418,6 +414,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 20.
 
+
+LaTeX Warning: Reference `fig-q1' on page 7 undefined on input line 22.
+
 <Q1diagram.pdf, id=25, 514.92375pt x 196.735pt>
 File: Q1diagram.pdf Graphic file (type pdf)
  <use Q1diagram.pdf>
@@ -435,6 +434,9 @@ Package pdftex.def Info: Q4diagram.pdf used on input line 43.
 Underfull \hbox (badness 10000) in paragraph at lines 50--56
 
  []
+
+
+LaTeX Warning: Reference `fig-q2' on page 8 undefined on input line 57.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
@@ -542,12 +544,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--203
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 4608 strings out of 493488
- 65330 string characters out of 3141326
- 197037 words of memory out of 3000000
- 7790 multiletter control sequences out of 15000+200000
+ 4576 strings out of 493488
+ 64757 string characters out of 3141326
+ 194035 words of memory out of 3000000
+ 7780 multiletter control sequences out of 15000+200000
  8409 words of font info for 30 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,9n,44p,809b,1461s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -560,7 +565,7 @@ sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
 al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on final_paper.pdf (20 pages, 181680 bytes).
+Output written on final_paper.pdf (20 pages, 182030 bytes).
 PDF statistics:
  178 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams
