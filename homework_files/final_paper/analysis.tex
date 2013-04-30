@@ -1,11 +1,13 @@
 \section{Analysis}
 \subsection{Overview of Claims \& Introduction to Analysis}
 
-We will show that a student used different strategies to decide which order to look at functions between two problems.
-For an evaluation problem, the student evaluated the code in the order it would have been executed.
-For a debugging problem, the student started looking at the code at the top of the paper and continued down until reaching a likely candidate for the location of the bug.
+We will show that a student used different strategies to decide how to look at code in two different problems.
+For the evaluation problem, where the code passed a function as an argument, the student evaluated the code in the order it would have been executed.
+For the debugging problem, where there was a bug in the Connect Four gameplay code, the student started looking at the code at the top of the paper and continued down until reaching a likely candidate for the location of the bug.
 For this student, each strategy appear to help him understand unfamiliar constructs, which then allows him to solve the problem. 
-We include two partial transcripts from a debugging and an evaluation problem to back these claims. 
+We include two partial transcripts from a debugging and an evaluation problem to support these claims. 
+In the presented transcript, the symbol [...] indicates a timeskip. 
+The full transcript of each question is provided in Appendix \ref{sec-full-transcripts}. 
 This student has taken a couple of computer science classes at Harvey Mudd College, including Principles and Practices of Computer Science, Data Structures and Program Development, and has tutored extensively for the Data Structures and Program Development class.
 
 %\newpage
@@ -123,7 +125,9 @@ T2& It's going to create an array of arrays or a list of lists depending on what
 T3& I don't know if, if lists in python are dynamically allocated or not [...] \\
 T4& So I wonder what this is doing. I guess it would be creating - an array with at least six - er, seven secondary arrays in it [...]\\
 \end{tabular}\\
-Line T2 demonstrates a lack of experience with Python.  which confuses him and does not allow him to map the data member to the physical representation of a connect four board. \\
+Line T2 demonstrates a lack of experience with Python.  
+This lack of experience leads him to question what the data structure self.board is actually represented as. He lists possible representations as a list of lists (dynamically allocated) or and array of arrays (statically allocated). He is also not clear on exactly how many secondary 'arrays' are created. 
+This prevents him from mapping the data member construct to the physical representation of a connect four board. \\
 
 
 After he finished describing the constructor, he moved down the code to the next function, drop:
@@ -140,9 +144,10 @@ Based on the code in this function, the student figured out what the board data 
 T5& So drop, I guess that is where you drop a piece in - if column less than self.width um self.board.append player \\
 T6&oh Ok so its doing  [starts drawing on paper] like a - array of arrays essentially and then it just pops on a color [...] as they happen [...] \\
 \end{tabular}\\
-In line T6, the student finally understands how the data structure of the board works, both in how it is initialized and how it changes through the drop function. Thus, the strategy he is using is allowing him to keep gaining clarity on what the code is doing. \\
+In line T6, the student finally understands how the data structure of the board works, both in how it is initialized and how it changes through the drop function. 
+Thus, the strategy he decided to use allowed him to keep gaining clarity on what the code is doing. \\
 
-Finally, he identifies this function as a point where the bug could be fixed, and does not go through any other code in the file. 
+After the end of this transcript, the student identified the drop function as a point where the bug could be fixed, and does not go through any other code in the file. 
 He is confident that he understands the solution to the problem even though he has only looked at a small portion of the provided code. 
 
 
@@ -190,7 +195,7 @@ He is confident that he understands the solution to the problem even though he h
 %This helped him map the physical representation onto the data member.
 %This knowledge helps him fix the bug which had been given to him in relation to the physical connect four board.  \\
 
-The student used two different strategies in the debugging and evaluation question which helped him move past an unfamiliar concept each time. Despite using different strategies, each strategy was clearly an efficient method to solve each problem. For example, in other interviews, if the student did not move directly from function 2 to function 1 in Q1, it took much longer to connect function 4 passed as an argument as the applied function in function 1. In Q4, some other strategies we have seen have led the student to get stuck in other locations as they try to relate the code to the physical model. Thus, being able to solve a problem efficiently requires the student to choose an effective strategy after only being given a little information about the problem. 
+The student used two different strategies in the debugging and evaluation question which helped him move past an unfamiliar concept each time. Despite using different strategies, each strategy was clearly an efficient method to solve each problem. For example, in other interviews, if the student did not move directly from function 2 to function 1 in Q1, it took much longer to connect function 4 from being passed as an argument to being an applied function in function 1. In Q4, some other strategies we have seen have led the student to get stuck in other locations as they try to relate the code to the physical model. Thus, being able to solve a problem efficiently requires the student to choose an effective strategy. 
 
 
 
@@ -202,7 +207,7 @@ The student used two different strategies in the debugging and evaluation questi
 \subsection{Summary}
 We have shown that a student used different strategies to decide which order to look at functions between two problems.
 For the evaluation problem, the student evaluated the code in the order it would have been executed. 
-In the process, he was initially stumped by the code passing a function as an argument, but realized what was happening by continuing to follow the path of execution. 
+In the process, he was initially confused by the code passing a function as an argument, but realized what was happening by continuing to follow the path of execution. 
 For the debugging problem, the student started looking at the code at the top of the paper and continued down until reaching a likely candidate for the location of the bug. 
 As he debugged, he was initially unsure about the data structure used as the board data member, but as he continued down, he was able to find code that supported one of the possibilities he had enumerated earlier.
 For this student, each strategy appeared to help him understand unfamiliar constructs, allowing him to solve the problems. 
