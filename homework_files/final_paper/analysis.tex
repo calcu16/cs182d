@@ -92,7 +92,7 @@ However since he was already primed to call a function he was able to identify t
 
 %\newpage
 \subsection{Q4: Debugging}
-In this problem, the student debugged by reading from the top of the file down, but stopping upon encountering a good location to insert a solution. In the process, he was confused about a data member in the code, but was able to recover by continuing with his chosen strategy. \\
+In this problem, the student identified a bug by reading from the top of the file down, but stopped upon encountering a good location to insert a solution. In the process, he was confused about a data member in the code, but was able to recover by continuing with his chosen strategy. \\
 
 The student began the problem by looking at the top of the given code:
 \begin{lstlisting}[language=python]
@@ -109,7 +109,7 @@ He relates the board class to the game described in the problem statement: \\
 \begin{tabular}{lp{13cm}}
 T1& Alright so we have a board class which is gonna presumably represent the connect 4 board [...]\\
 \end{tabular} \\
-He is able to relate the code concept of a class to the domain concept of a game of connect four. \\
+From this statement, we know the student is able to relate the code concept of a class to the domain concept of a game of connect four. \\
 
 After talking about the other data members, the student mentions multiple possibilities for the data structure of this data member:
 \begin{lstlisting}[language=python]
@@ -118,11 +118,11 @@ After talking about the other data members, the student mentions multiple possib
 
 He said: \\
 \begin{tabular}{lp{13cm}}
-T2& it's going to create an array of arrays or a list of lists depending on what you call it in python [...] \\
-T3& i don't know if, if lists in python are dynamically allocated or not [...] \\
-T4& so i wonder what this is doing. I guess it would be creating - an array with at least six - er, seven secondary arrays in it [...]\\
+T2& It's going to create an array of arrays or a list of lists depending on what you call it in Python [...] \\
+T3& I don't know if, if lists in python are dynamically allocated or not [...] \\
+T4& So I wonder what this is doing. I guess it would be creating - an array with at least six - er, seven secondary arrays in it [...]\\
 \end{tabular}\\
-This demonstrates a lack of experience with Python, which confuses him and does not allow him to map the data member to the physical representation of a connect four board. \\
+Line T2 demonstrates a lack of experience with Python.  which confuses him and does not allow him to map the data member to the physical representation of a connect four board. \\
 
 
 After he finished describing the constructor, he moved down the code to the next function, drop:
@@ -136,13 +136,13 @@ After he finished describing the constructor, he moved down the code to the next
 
 Based on the code in this function, the student figured out what the board data structure looks like: \\
 \begin{tabular}{lp{13cm}}
-T5& so drop, i guess that is where you drop a piece in - if column less than self.width um self.board.append player \\
-T6&oh ok so its doing  [starts drawing on paper] like a - array of arrays essentially and then it just pops on a color [...] as they happen [...] \\
+T5& So drop, I guess that is where you drop a piece in - if column less than self.width um self.board.append player \\
+T6&oh Ok so its doing  [starts drawing on paper] like a - array of arrays essentially and then it just pops on a color [...] as they happen [...] \\
 \end{tabular}\\
-The strategy he is using is allowing him to keep gaining clarity on what the code is doing. \\
+In line T6, the student finally understands how the data structure of the board works, both in how it is initialized and how it changes through the drop function. Thus, the strategy he is using is allowing him to keep gaining clarity on what the code is doing. \\
 
 Finally, he identifies this function as a point where the bug could be fixed, and does not go through any other code in the file. 
-He is confident hat he understands the solution to the problem even though he has only looked at a small portion of the provided code. 
+He is confident that he understands the solution to the problem even though he has only looked at a small portion of the provided code. 
 
 
 
