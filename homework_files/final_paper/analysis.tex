@@ -27,11 +27,10 @@ The student begins by identifying the call to main.
 T1&Alright so, its got a main, so thats gonna start. [...]\\
 \end{tabular}
 
-The student starts at the main function, it is the very first thing he identifies.
-He continues evaluating the code in execution order.
-This student's evaluating strategy clearly is identify where execution starts and then continue in execution order.
+The student starts at the main function, it is the very first thing he identifies even though the function is in the middle of the page, and the call isn't until the end of the page.
+He appears to identify because he was looking for the start of execution. \\
 
-The student continues in execution order until he hits func2,
+Omitted from this is transcript where the student continues in execution order until he reaches func2 shown below,
 
 \begin{lstlisting}[language=python]
 0		def func2(list, num):
@@ -44,8 +43,8 @@ The student tries to evaluate func4 instead of passing it to func1.
 T2&Function 2 returns function 1 with the same two arguments already passed to it, and function 4, the result of -\\
 \end{tabular}
 
-He immediately jumps to ``the result of,'' even there are no parenthesis that are required for function calls.
-Clearly he is unfamiliar with passing functions as arguments in Python.
+He immediately jumps to ``the result of,'' even though there are no parenthesis that would indicate the function would be called.
+The student does not recognize the syntax for passing the function as an argument. \\
 
 The student tries to resolve his confusion by looking at func4
 
@@ -54,18 +53,19 @@ The student tries to resolve his confusion by looking at func4
 4			return a * b
 \end{lstlisting}
 
-He tries to find ways to call func4, without any arguments,
+He tries to find ways to call func4, without any arguments, he finishes his previous sentence with,
 
 \begin{tabular}{lp{13cm}}
 T3&Which doesn't have any implied arguments, thats interesting. Umm, thats odd [pause]\\
 \end{tabular}
 
-In this case he is working off of the hypothesis that if you have default arguments to a function,
-  then you can call the function parenthesis.
+When he says implied arguments he appears to be referring to default arguments.
+In this case he appears to be working off of the hypothesis that if you have default arguments to a function,
+  then you can call the function without parenthesis (which is incorrect).
 However, the student notes that there are no default arguments (he refers to them as implied arguments).
-Note, that even though the program does not call func4 from func2, from the student's perspective, because he believes func4 needs to be called, func4 was next in execution order.
+Note that even though the program does not call func4 from func2, because the student believes that func4 is being called, func4 would be executed from the student's perspective. \\
 
-He continues onto func1, even though he is confused about how func4 works in func2.
+He continues onto func1, even though he seems to still be confused about how func4 works in func2.
 
 \begin{lstlisting}[language=python]
 6		def func1(list, num, f):
@@ -84,12 +84,12 @@ T6&and the function 4 as sort of a multiplier.\\
 T7&A function to apply. \\
 \end{tabular}
 
-The student is able to figure that func4 is being passed as an argument.
-He note that function 4 is being used as a multiplier, and the succinctly describes it as a function to apply.
-He clearly now understands that functions can be passed as arguments, and the semantics of doing so.
-The student drew this conclusion by continuing with execution order, and matching up the f in function 1 with the func4 in function 2.
+In the four lines above, the student is able to figure that func4 is being passed as an argument.
+He notes in T6 that function 4 is being used as a multiplier, and the succinctly describes it as ``a function to apply'' in T7.
+He clearly now understands that func4 is passed as an argument, and the semantics of doing so.
+The student drew this conclusion by continuing with execution order, and matching up the f in function 1 with the func4 passed from function 2.
 It appears that following execution order helped him figure this out, he might not have been able to make that connection if he had not looked at function 1 while being confused about the need for func4.
-However since he was already primed to call a function he was able to identify that the argument f got called.
+However since he was looking for something to do with func4, it may have been easier to figure out that it related to the f in func1.
 
 %\newpage
 \subsection{Q4: Debugging}
