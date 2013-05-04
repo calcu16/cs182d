@@ -88,14 +88,14 @@ T7&A function to apply. \\
 
 In the four lines above, the student is able to figure that func4 is being passed as an argument.
 He notes in T6 that function 4 is being used as a multiplier, and the succinctly describes it as ``a function to apply'' in T7.
-He clearly now understands that func4 is passed as an argument, and the semantics of doing so.
+He appears to understand that func4 is passed as an argument, and the semantics of doing so.
 The student drew this conclusion by continuing with execution order, and matching up the f in function 1 with the func4 passed from function 2.
 It appears that following execution order helped him figure this out, he might not have been able to make that connection if he had not looked at function 1 while being confused about the need for func4.
 However since he was looking for something to do with func4, it may have been easier to figure out that it related to the f in func1.
 
 %\newpage
 \subsection{Q4: Debugging}
-In this problem, the student identified a bug by reading from the top of the file down, but stopped upon encountering a good location to insert a solution. In the process, he was confused about a data member in the code, but was able to recover by continuing with his chosen strategy. \\
+In this problem, the student identified a bug by reading from the top of the file down, but stopped upon encountering a good location to insert a solution. In the process, he appeared to be confused about a data member in the code, but was able to recover by continuing with his chosen strategy. \\
 
 The student began the problem by looking at the top of the given code:
 \begin{lstlisting}[language=python]
@@ -110,9 +110,9 @@ The student began the problem by looking at the top of the given code:
 
 He relates the board class to the game described in the problem statement: \\
 \begin{tabular}{lp{13cm}}
-T1& Alright so we have a board class which is gonna presumably represent the connect 4 board [...]\\
+T1& Alright so we have a board class which is gonna presumably represent the Connect 4 board [...]\\
 \end{tabular} \\
-From this statement, we know the student is able to relate the code concept of a class to the domain concept of a game of connect four. \\
+From this statement, we think the student is able to relate the code concept of a class to the domain concept of a game of Connect 4. \\
 
 After talking about the other data members, the student mentions multiple possibilities for the data structure of this data member:
 \begin{lstlisting}[language=python]
@@ -122,12 +122,13 @@ After talking about the other data members, the student mentions multiple possib
 He said: \\
 \begin{tabular}{lp{13cm}}
 T2& It's going to create an array of arrays or a list of lists depending on what you call it in Python [...] \\
-T3& I don't know if, if lists in python are dynamically allocated or not [...] \\
+T3& I don't know if, if lists in Python are dynamically allocated or not [...] \\
 T4& So I wonder what this is doing. I guess it would be creating - an array with at least six - er, seven secondary arrays in it [...]\\
 \end{tabular}\\
-Line T2 demonstrates a lack of experience with Python.  
-This lack of experience leads him to question what the data structure self.board is actually represented as. He lists possible representations as a list of lists (dynamically allocated) or and array of arrays (statically allocated). He is also not clear on exactly how many secondary 'arrays' are created. 
-This prevents him from mapping the data member construct to the physical representation of a connect four board. \\
+Line T2 appears to demonstrate a lack of experience with Python.  
+This lack of experience leads him to question what the data structure self.board is actually represented as.
+He lists possible representations as a list of lists (dynamically allocated) or and array of arrays (statically allocated). He is also not clear on exactly how many secondary 'arrays' are created. 
+This prevents him from mapping the data member construct to the physical representation of a Connect 4 board. \\
 
 
 After he finished describing the constructor, he moved down the code to the next function, drop:
@@ -144,8 +145,8 @@ Based on the code in this function, the student figured out what the board data 
 T5& So drop, I guess that is where you drop a piece in - if column less than self.width um self.board.append player \\
 T6&oh Ok so its doing  [starts drawing on paper] like a - array of arrays essentially and then it just pops on a color [...] as they happen [...] \\
 \end{tabular}\\
-In line T6, the student finally understands how the data structure of the board works, both in how it is initialized and how it changes through the drop function. 
-Thus, the strategy he decided to use allowed him to keep gaining clarity on what the code is doing. \\
+In line T6, the student appears to finally understands how the data structure of the board works, both in how it is initialized and how it changes through the drop function. 
+Thus, the strategy he decided to use probably allowed him to keep gaining clarity on what the code is doing. \\
 
 After the end of this transcript, the student identified the drop function as a point where the bug could be fixed, and does not go through any other code in the file. 
 He is confident that he understands the solution to the problem even though he has only looked at a small portion of the provided code. 
@@ -195,7 +196,7 @@ He is confident that he understands the solution to the problem even though he h
 %This helped him map the physical representation onto the data member.
 %This knowledge helps him fix the bug which had been given to him in relation to the physical connect four board.  \\
 
-The student used two different strategies in the debugging and evaluation question which helped him move past an unfamiliar concept each time. Despite using different strategies, each strategy was clearly an efficient method to solve each problem. For example, in other interviews, if the student did not move directly from function 2 to function 1 in Q1, it took much longer to connect function 4 from being passed as an argument to being an applied function in function 1. In Q4, some other strategies we have seen have led the student to get stuck in other locations as they try to relate the code to the physical model. Thus, being able to solve a problem efficiently requires the student to choose an effective strategy. 
+The student used two different strategies in the debugging and evaluation question which helped him move past an unfamiliar concept each time. Despite using different strategies, each strategy was clearly an efficient method to solve each problem. For example, in other interviews, if the student did not move directly from function 2 to function 1 in Question 1, it took much longer to connect function 4 from being passed as an argument to being an applied function in function 1. In Question 4, some other strategies we have seen have led the student to get stuck in other locations as they try to relate the code to the physical model. Thus, being able to solve a problem efficiently requires the student to choose an effective strategy. 
 
 
 
