@@ -28,33 +28,34 @@ The student begins by identifying the call to main, as shown be the section of t
 T1&Alright so, its got a main, so thats gonna start. [...]\\
 \end{tabular}
 
-The student starts at the main function, it is the very first thing he identifies even though the function is in the middle of the page, and the call isn't until the end of the page.
-He appears to identify because he was looking for the start of execution. \\
+The student starts at the main function, it is the very first thing he identifies even though the function is in the middle of the page, and the call to main is not until the end of the page.
+He appears to identify main because he was looking for the start of execution. \\
 
-Omitted from this is transcript where the student continues in execution order until he reaches func2 shown below,
+Omitted from this is transcript where the student continues in execution order until he reaches func2 shown below.
+The full transcript is in Appendix \ref{subsec-q1-transcipt},
 
 \begin{lstlisting}[language=python]
 0		def func2(list, num):
 1			return func1(list, num, func4)
 \end{lstlisting}
 
-The student tries to evaluate func4 instead of passing it to func1.
+The student tries to call func4 instead of passing it to func1.
 
 \begin{tabular}{lp{13cm}}
 T2&Function 2 returns function 1 with the same two arguments already passed to it, and function 4, the result of -\\
 \end{tabular}
 
-He immediately jumps to ``the result of,'' even though there are no parenthesis that would indicate the function would be called.
-The student does not recognize the syntax for passing the function as an argument. \\
+He says ``the result of,'' even though there are no parenthesis that would indicate the function would be called.
+The student appears to be trying to call func4 before calling func1.
 
-As shown below, the student tries to resolve his confusion by looking at func4
+As shown below, the student goes to func4 to try to resolve his confusion,
 
 \begin{lstlisting}[language=python]
 3		def func4(a, b):
 4			return a * b
 \end{lstlisting}
 
-He tries to find ways to call func4, without any arguments, he finishes his previous sentence with,
+He tries to find ways to call func4 without any arguments, he finishes his previous sentence with,
 
 \begin{tabular}{lp{13cm}}
 T3&Which doesn't have any implied arguments, thats interesting. Umm, thats odd [pause]\\
