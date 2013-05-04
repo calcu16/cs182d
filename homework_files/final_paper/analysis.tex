@@ -5,9 +5,9 @@ We will show that a student used different strategies to decide how to look at c
 For the evaluation problem, where the code passed a function as an argument, the student evaluated the code in the order it would have been executed.
 For the debugging problem, where there was a bug in the Connect Four gameplay code, the student started looking at the code at the top of the paper and continued down until reaching a likely candidate for the location of the bug.
 We include two partial transcripts from a debugging and an evaluation problem to support these claims. 
-In the presented transcript, the symbol [...] indicates where we have removed portions of the transcript in order to focus on the parts of the transcripts that are integral to our analysis. 
+In the presented transcript, the symbol [...] indicates where we removed portions of the transcript in order to focus on the parts of the transcripts that are integral to our analysis. 
 The full transcript of each question is provided in Appendix \ref{sec-full-transcripts}. 
-This student has taken a couple of computer science classes at Harvey Mudd College, including Principles and Practices of Computer Science, Data Structures and Program Development, and has tutored extensively for the Data Structures and Program Development class.
+This student had taken a couple of computer science classes at Harvey Mudd College, including Principles and Practices of Computer Science, Data Structures and Program Development, and had tutored extensively for the Data Structures and Program Development class.
 
 %\newpage
 \subsection{Q1: Evaluation}
@@ -22,52 +22,52 @@ The program starts with a call to main on line 18, and main is defined on line 1
 18		main()
 \end{lstlisting}
 
-The student begins by identifying the call to main, as shown be the section of transcript below,
+The student began by identifying the call to main, as shown in the section of transcript below:
 
 \begin{tabular}{lp{13cm}}
 T1&Alright so, its got a main, so thats gonna start. [...]\\
 \end{tabular}
 
-The student starts at the main function, it is the very first thing he identifies even though the function is in the middle of the page, and the call to main is not until the end of the page.
-He appears to identify main because he was looking for the start of execution. \\
+The student started at the main function. It is the very first thing he identified even though the function is in the middle of the page, and the call to main is not until the end of the page.
+He appeared to identify main because he was looking for the start of execution. \\
 
-Omitted from this is transcript where the student continues in execution order until he reaches func2 shown below.
-The full transcript is in Appendix \ref{subsec-q1-transcipt},
+Omitted from this is transcript is where the student continued in execution order until he reached func2 shown below.
+The full transcript is in Appendix \ref{subsec-q1-transcipt}.
 
 \begin{lstlisting}[language=python]
 0		def func2(list, num):
 1			return func1(list, num, func4)
 \end{lstlisting}
 
-The student tries to call func4 instead of passing it to func1.
+The student tried to call func4 instead of passing it to func1.
 
 \begin{tabular}{lp{13cm}}
 T2&Function 2 returns function 1 with the same two arguments already passed to it, and function 4, the result of -\\
 \end{tabular}
 
-He says ``the result of,'' even though there are no parenthesis that would indicate the function would be called.
-The student appears to be trying to call func4 before calling func1.
+He said ``the result of,'' even though there were no parentheses that would indicate the function was called.
+The student appeared to be trying to call func4 before calling func1.
 
-As shown below, the student goes to func4 to try to resolve his confusion,
+As shown below, the student went to func4 to try to resolve his confusion.
 
 \begin{lstlisting}[language=python]
 3		def func4(a, b):
 4			return a * b
 \end{lstlisting}
 
-He considers ways to call func4 without any arguments, he finishes his previous sentence with,
+He considered ways to call func4 without any arguments, and finished his previous sentence with:
 
 \begin{tabular}{lp{13cm}}
 T3&Which doesn't have any implied arguments, thats interesting. Umm, thats odd [pause]\\
 \end{tabular}
 
-When he says implied arguments he appears to be referring to default arguments.
+When he said implied arguments he appears to be referring to default arguments.
 In this case he appears to be working off of the hypothesis that if you have default arguments to a function,
-  then you can call the function without parenthesis (which is incorrect).
-However, the student notes that there are no default arguments (he refers to them as implied arguments).
-Note that even though the program does not call func4 from func2, because the student believes that func4 is being called, func4 would be executed from the student's perspective. \\
+  then you can call the function without parentheses (which is incorrect).
+However, the student noted that there were no default arguments (he referred to them as implied arguments).
+Note that even though the program does not call func4 from func2, because the student believed that func4 is being called, func4 would be executed from the student's perspective. \\
 
-He continues onto func1, even though he seems to still be confused about how func4 works in func2.
+He continued on to func1, even though he still seemed to be confused about how func4 works in func2.
 
 \begin{lstlisting}[language=python]
 6		def func1(list, num, f):
@@ -77,7 +77,7 @@ He continues onto func1, even though he seems to still be confused about how fun
 10		return acc
 \end{lstlisting}
 
-He notes that the \texttt{f} in func1 is the same as func4 in func2. \\
+He noted that the \texttt{f} in func1 is the same as func4 in func2. \\
 
 \begin{tabular}{lp{13cm}}
 T4& lets see, so its calling functi-,ooh, it calling function 1.\\
@@ -86,9 +86,9 @@ T6&and the function 4 as sort of a multiplier.\\
 T7&A function to apply. \\
 \end{tabular}
 
-In the four lines above, the student is able to figure that func4 is being passed as an argument.
-He notes in T6 that function 4 is being used as a multiplier, and the succinctly describes it as ``a function to apply'' in T7.
-He appears to understand that func4 is passed as an argument, and the semantics of doing so.
+In the four lines above, the student was able to figure out that func4 is being passed as an argument.
+He noted in T6 that function 4 is being used as a multiplier, and he succinctly described it as ``a function to apply'' in T7.
+He appeared to understand that func4 is passed as an argument, and the semantics of doing so.
 The student drew this conclusion by continuing with execution order, and matching up the f in function 1 with the func4 passed from function 2.
 It appears that following execution order helped him figure this out, he might not have been able to make that connection if he had not looked at function 1 while being confused about the need for func4.
 However since he was looking for something to do with func4, it may have been easier to figure out that it related to the f in func1.
@@ -108,13 +108,13 @@ The student began the problem by looking at the top of the given code:
 6 			self.height= 6
 \end{lstlisting}
 
-He relates the board class to the game described in the problem statement: \\
+He related the board class to the game described in the problem statement: \\
 \begin{tabular}{lp{13cm}}
 T1& Alright so we have a board class which is gonna presumably represent the Connect 4 board [...]\\
 \end{tabular} \\
-From this statement, we think the student is able to relate the code concept of a class to the domain concept of a game of Connect 4. \\
+From this statement, we believe the student was able to relate the code concept of a class to the domain concept of a game of Connect 4. \\
 
-After talking about the other data members, the student mentions multiple possibilities for the data structure of this data member:
+After talking about the other data members, the student mentioned multiple possibilities for the data structure of this data member:
 \begin{lstlisting}[language=python]
 4 			self.board = [[] for i in range(width)]
 \end{lstlisting}
@@ -126,9 +126,9 @@ T3& I don't know if, if lists in Python are dynamically allocated or not [...] \
 T4& So I wonder what this is doing. I guess it would be creating - an array with at least six - er, seven secondary arrays in it [...]\\
 \end{tabular}\\
 Line T2 appears to demonstrate a lack of experience with Python.  
-This lack of experience leads him to question what the data structure self.board is actually represented as.
-He lists possible representations as a list of lists (dynamically allocated) or and array of arrays (statically allocated). He is also not clear on exactly how many secondary 'arrays' are created. 
-This prevents him from mapping the data member construct to the physical representation of a Connect 4 board. \\
+This lack of experience led him to question what the data structure self.board is actually represented as.
+He listed possible representations as a list of lists (dynamically allocated) or an array of arrays (statically allocated). He was also not clear on exactly how many secondary 'arrays' are created. 
+This prevented him from mapping the data member construct to the physical representation of a Connect 4 board. \\
 
 
 After he finished describing the constructor, he moved down the code to the next function, drop:
@@ -145,11 +145,18 @@ Based on the code in this function, the student figured out what the board data 
 T5& So drop, I guess that is where you drop a piece in - if column less than self.width um self.board.append player \\
 T6&oh Ok so its doing  [starts drawing on paper] like a - array of arrays essentially and then it just pops on a color [...] as they happen [...] \\
 \end{tabular}\\
-In line T6, the student appears to finally understands how the data structure of the board works, both in how it is initialized and how it changes through the drop function. 
+In line T6, the student appears to finally understand how the data structure of the board works, both in how it is initialized and how it changes through the drop function. He used the drawing shown in Fig. \ref{fig-q4-drawing} to show a graphical representation of this knowledge. 
 Thus, the strategy he decided to use probably allowed him to keep gaining clarity on what the code is doing. \\
 
-After the end of this transcript, the student identified the drop function as a point where the bug could be fixed, and does not go through any other code in the file. 
-He is confident that he understands the solution to the problem even though he has only looked at a small portion of the provided code. 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=1.0\textwidth]{2_2drawing.png}
+\caption{Drawing student created during transcript line T6}
+\label{fig-q4-drawing}
+\end{figure*}
+
+After the end of this transcript, the student identified the drop function as a point where the bug could be fixed, and did not go through any other code in the file. 
+He was confident that he understood the solution to the problem even though he had only looked at a small portion of the provided code. 
 
 
 
@@ -196,7 +203,7 @@ He is confident that he understands the solution to the problem even though he h
 %This helped him map the physical representation onto the data member.
 %This knowledge helps him fix the bug which had been given to him in relation to the physical connect four board.  \\
 
-The student used two different strategies in the debugging and evaluation question which helped him move past an unfamiliar concept each time. Despite using different strategies, each strategy was clearly an efficient method to solve each problem. For example, in other interviews, if the student did not move directly from function 2 to function 1 in Question 1, it took much longer to connect function 4 from being passed as an argument to being an applied function in function 1. In Question 4, some other strategies we have seen have led the student to get stuck in other locations as they try to relate the code to the physical model. Thus, being able to solve a problem efficiently requires the student to choose an effective strategy. 
+The student used two different strategies in the debugging and evaluation question which helped him move past an unfamiliar concept each time. Despite using different strategies, each strategy was clearly an efficient method to solve each problem. For example, in other interviews, if the student did not move directly from function 2 to function 1 in Question 1, it took much longer to connect function 4 from being passed as an argument to being an applied function in function 1. In Question 4, some other strategies we have seen have led the student to get stuck in other locations as they tried to relate the code to the physical model. Thus, being able to solve a problem efficiently requires the student to choose an effective strategy. 
 
 
 
@@ -206,11 +213,11 @@ The student used two different strategies in the debugging and evaluation questi
 
 
 \subsection{Summary}
-We have shown that a student used different strategies to decide which order to look at functions between two problems.
+We have shown that a student used different strategies to decide which order to look at functions within two problems, and that each chosen strategy appeared to help him understand an unfamiliar concept.
 For the evaluation problem, the student evaluated the code in the order it would have been executed. 
 In the process, he was initially confused by the code passing a function as an argument, but realized what was happening by continuing to follow the path of execution. 
 For the debugging problem, the student started looking at the code at the top of the paper and continued down until reaching a likely candidate for the location of the bug. 
 As he debugged, he was initially unsure about the data structure used as the board data member, but as he continued down, he was able to find code that supported one of the possibilities he had enumerated earlier.
 For this student, each strategy appeared to help him understand unfamiliar constructs, allowing him to solve the problems. 
 
-\newpage
+%\newpage
