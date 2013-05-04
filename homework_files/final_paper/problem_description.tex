@@ -1,9 +1,5 @@
 \section{Problem Descriptions}
 
-% rai wonders why the bit about how long the program is is there
-% don't consistently capitalize board - need to look at it
-% read eval print loop needs to be explained further
-
 \subsection{Question 1}
 \subsubsection{Summary}
 Interview Question 1 asks the interviewee to evaluate a short program.
@@ -31,11 +27,10 @@ This process can be seen in Figure \ref{fig-q1}.
 %\newpage
 \subsection{Q4}
 \subsubsection{Summary}
-Interview Question 4 (Q4) asks the interviewee to locate and fix a bug in a program that they are told plays connect four.
+Interview Question 4 (Q4) asks the interviewee to locate and fix a bug in a program that they are told plays Connect 4.
 The bug is that when pieces are dropped into the board, the program lets pieces be dropped in even if the column is full.
 The program is 70 lines long and covers two pages when printed.
-\subsubsection{Copy of Problem}
-The problem can be found in the Appendix attached below as Interview Question 4.
+The problem can be found in the Appendix as Interview Question 4.
 
 \subsubsection{Solution Description}
 \begin{figure*}[t]
@@ -57,10 +52,10 @@ It also stores the height and width of the board in class variables. \\
 Here the program starts a Read-Eval-Print loop. A Read-Eval-Print loop is a structure that takes in input, evaluates how that changes the stored data, and then prints a representation of the data. Figure \ref{fig-q2} shows the structure of this loop and the previous initialization as well as the function calls that correspond to each part of the loop.\\
 
 At line 55, the program asks for input, the read part of the loop.
-Then, it calls board.drop(player,c) which adds a piece to the column that the user has specified through the input.
-In the drop function (line 8), we can see that if the column selected is part of the board,
+Then, it calls the drop(player,c) function which adds a piece to the column that the user has specified through the input.
+In the drop function (line 8), we can see that if the column selected is part of the self.board variable,
 	the piece is appended to that column in the list of lists.
-This is analogous to dropping a piece into the board, meaning this is a logical place where the bug could be fixed.\\
+This is analogous to dropping a piece into the Connect 4 board in an actual game, meaning this is a logical place where the bug could be fixed.\\
 
 Since we check that the column is valid,
 we can also check that the column is not full by changing the drop function to include this line between lines 9 and 10:
